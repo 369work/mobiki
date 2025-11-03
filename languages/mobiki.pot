@@ -1,0 +1,335 @@
+# Copyright (C) 2025 Miroku
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mobiki 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mobiki\n"
+"POT-Creation-Date: 2025-11-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: WordPress\n"
+
+#: functions.php:130
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:131
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:132
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:143
+msgid "Hero Section"
+msgstr ""
+
+#: functions.php:147
+msgid "Sections"
+msgstr ""
+
+#: inc/admin-theme-settings.php:9
+#: inc/admin-theme-settings.php:63
+msgid "Mobiki Theme Settings"
+msgstr ""
+
+#: inc/admin-theme-settings.php:10
+msgid "Mobiki Settings"
+msgstr ""
+
+#: inc/admin-theme-settings.php:53
+msgid "Settings saved."
+msgstr ""
+
+#: inc/admin-theme-settings.php:64
+msgid "Configure the settings for the Mobiki theme."
+msgstr ""
+
+#: inc/admin-theme-settings.php:65
+msgid "You will register the phone number, email address, and icon to be used in the theme profile."
+msgstr ""
+
+#: inc/admin-theme-settings.php:70
+msgid "Phone Number"
+msgstr ""
+
+#: inc/admin-theme-settings.php:76
+msgid "Contact Email"
+msgstr ""
+
+#: inc/admin-theme-settings.php:83
+msgid "Profile Description"
+msgstr ""
+
+#: inc/admin-theme-settings.php:89
+msgid "Enter a description for your profile."
+msgstr ""
+
+#: inc/admin-theme-settings.php:94
+msgid "Profile Image"
+msgstr ""
+
+#: inc/admin-theme-settings.php:100
+msgid "Select Image"
+msgstr ""
+
+#: inc/admin-theme-settings.php:101
+msgid "Remove Image"
+msgstr ""
+
+#: inc/admin-theme-settings.php:117
+msgid "Select Profile Image"
+msgstr ""
+
+#: inc/admin-theme-settings.php:118
+msgid "Use this image"
+msgstr ""
+
+#: inc/admin-theme-settings.php:141
+msgid "Save Settings"
+msgstr ""
+
+#: patterns/404.php:16
+msgid "ERROR 404"
+msgstr ""
+
+#: patterns/404.php:20
+msgid "Page not found."
+msgstr ""
+
+#: patterns/404.php:24
+msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+msgstr ""
+
+#: patterns/404.php:36
+msgid "Please use the links below to find the page you are looking for:"
+msgstr ""
+
+#: patterns/404.php:42
+msgid "Back to Top"
+msgstr ""
+
+#: patterns/404.php:59
+msgid "Recent Posts"
+msgstr ""
+
+#: patterns/about-section.php:16
+msgid "ABOUT ME"
+msgstr ""
+
+#: patterns/about-section.php:20
+msgid "About me"
+msgstr ""
+
+#: patterns/about-section.php:24
+msgid "Through design, we create experiences that resonate with people's hearts."
+msgstr ""
+
+#: patterns/about-section.php:36
+msgid "Hello. I am a web designer based in Tokyo."
+msgstr ""
+
+#: patterns/about-section.php:40
+msgid "I prioritize user experience and strive for designs that balance beauty and functionality. With a mobile-first approach, I aim to deliver the best experience across all devices."
+msgstr ""
+
+#: patterns/about-section.php:44
+msgid "Design is not just about aesthetics; it is about enriching people's lives."
+msgstr ""
+
+#: patterns/blog-section.php:14
+msgid "BLOG"
+msgstr ""
+
+#: patterns/blog-section.php:18
+msgid "Blog"
+msgstr ""
+
+#: patterns/blog-section.php:22
+msgid "We share our thoughts and the latest information on design."
+msgstr ""
+
+#: patterns/breadcrumb.php:15
+msgid "Home"
+msgstr ""
+
+#: patterns/comments.php:16
+msgid "Comments"
+msgstr ""
+
+#: patterns/contact-section.php:19
+msgid "CONTACT"
+msgstr ""
+
+#: patterns/contact-section.php:23
+msgid "CONTACT US"
+msgstr ""
+
+#: patterns/contact-section.php:27
+msgid "Please feel free to contact us with any questions or inquiries regarding your project."
+msgstr ""
+
+#: patterns/contact-section.php:37
+msgid "CONTACT US BY EMAIL"
+msgstr ""
+
+#: patterns/contact-section.php:41
+msgid "CONTACT US BY PHONE"
+msgstr ""
+
+#: patterns/footer-content.php:17
+msgid " All Rights Reserved."
+msgstr ""
+
+#: patterns/hero-section.php:24
+msgid "Creative"
+msgstr ""
+
+#: patterns/hero-section.php:24
+msgid "Designer"
+msgstr ""
+
+#: patterns/hero-section.php:28
+msgid "With designs that resonate with the heart"
+msgstr ""
+
+#: patterns/hero-section.php:28
+msgid "Bring your vision to life."
+msgstr ""
+
+#: patterns/mobile-footer-nav.php:14
+#: patterns/mobile-footer-nav.php:15
+msgid "ABOUT"
+msgstr ""
+
+#: patterns/mobile-footer-nav.php:18
+#: patterns/mobile-footer-nav.php:19
+msgid "WORK"
+msgstr ""
+
+#: patterns/mobile-footer-nav.php:26
+#: patterns/mobile-footer-nav.php:27
+msgid "BLOG"
+msgstr ""
+
+#: patterns/mobile-footer-nav.php:30
+#: patterns/mobile-footer-nav.php:31
+msgid "SERVICE"
+msgstr ""
+
+#: patterns/mobile-profile.php:23
+msgid "Web Designer &amp; Developer"
+msgstr ""
+
+#: patterns/mobile-profile.php:24
+msgid "With creative design,"
+msgstr ""
+
+#: patterns/mobile-profile.php:25
+msgid "I aim to provide the best user experience."
+msgstr ""
+
+#: patterns/mobile-profile.php:31
+msgid "Available for work"
+msgstr ""
+
+#: patterns/profile.php:23
+msgid "Web Designer &amp; Developer"
+msgstr ""
+
+#: patterns/profile.php:24
+msgid "With creative design,"
+msgstr ""
+
+#: patterns/profile.php:25
+msgid "I aim to provide the best user experience."
+msgstr ""
+
+#: patterns/profile.php:31
+msgid "Available for work"
+msgstr ""
+
+#: patterns/service-section.php:15
+msgid "SERVICE"
+msgstr ""
+
+#: patterns/service-section.php:19
+msgid "Services provided"
+msgstr ""
+
+#: patterns/service-section.php:23
+msgid "Services offered: We provide optimal solutions tailored to our customers' needs."
+msgstr ""
+
+#: patterns/service-section.php:33
+msgid "WEB Design"
+msgstr ""
+
+#: patterns/service-section.php:34
+msgid "We design beautiful and functional websites that prioritize the user experience."
+msgstr ""
+
+#: patterns/service-section.php:38
+msgid "UI/UX Design"
+msgstr ""
+
+#: patterns/service-section.php:39
+msgid "We provide interface design that balances usability and aesthetics."
+msgstr ""
+
+#: patterns/service-section.php:43
+msgid "Branding"
+msgstr ""
+
+#: patterns/service-section.php:44
+msgid "We support branding that maximizes the value of companies and services."
+msgstr ""
+
+#: patterns/service-section.php:48
+msgid "Front-end Development"
+msgstr ""
+
+#: patterns/service-section.php:49
+msgid "We provide high-quality front-end development using modern technologies."
+msgstr ""
+
+#: patterns/work-section.php:15
+msgid "WORKS"
+msgstr ""
+
+#: patterns/work-section.php:19
+msgid "Project History"
+msgstr ""
+
+#: patterns/work-section.php:23
+msgid "A showcase of some of the projects we have worked on."
+msgstr ""
+
+#: patterns/work-section.php:38
+msgid "Branding site production"
+msgstr ""
+
+#: patterns/work-section.php:42
+msgid "We created a website to establish the brand identity of a startup company. With a modern design and intuitive UI, we maximized the appeal of the brand."
+msgstr ""
+
+#: patterns/work-section.php:57
+msgid "Mobile App UI Design"
+msgstr ""
+
+#: patterns/work-section.php:61
+msgid "We were responsible for the UI/UX design of an e-commerce application. Focusing on usability, we designed a seamless flow to purchase."
+msgstr ""
+
+#: patterns/work-section.php:76
+msgid "Portfolio Site"
+msgstr ""
+
+#: patterns/work-section.php:79
+msgid "We designed a portfolio site for creators. The structure focuses on visuals to maximize the appeal of the works."
+msgstr ""

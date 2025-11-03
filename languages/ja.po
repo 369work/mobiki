@@ -1,0 +1,330 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mobiki\n"
+"POT-Creation-Date: 2025-11-04 05:57+0900\n"
+"PO-Revision-Date: 2025-11-04 05:59+0900\n"
+"Last-Translator: 369work\n"
+"Language-Team: 369work\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html;esc_html__;esc_atter_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:149
+msgid "Hero Section"
+msgstr "ヒーローセクション"
+
+#: functions.php:153
+msgid "Sections"
+msgstr "セクション"
+
+#: inc/admin-theme-settings.php:9 inc/admin-theme-settings.php:63
+msgid "Mobiki Theme Settings"
+msgstr "Mobikiテーマ設定"
+
+#: inc/admin-theme-settings.php:10
+msgid "Mobiki Settings"
+msgstr "Mobiki設定"
+
+#: inc/admin-theme-settings.php:53
+msgid "Settings saved."
+msgstr "設定の保存をしました。"
+
+#: inc/admin-theme-settings.php:64
+msgid "Configure the settings for the Mobiki theme."
+msgstr "Mobiki テーマの設定を構成します。"
+
+#: inc/admin-theme-settings.php:65
+msgid ""
+"You will register the phone number, email address, and icon to be used in "
+"the theme profile."
+msgstr ""
+"テーマのプロフィールで使用する電話番号、メールアドレス、アイコンを登録しま"
+"す。"
+
+#: inc/admin-theme-settings.php:70
+msgid "Phone Number"
+msgstr "電話番号"
+
+#: inc/admin-theme-settings.php:76
+msgid "Contact Email"
+msgstr "問い合わせ用のメールアドレス"
+
+#: inc/admin-theme-settings.php:83
+msgid "Profile Description"
+msgstr "プロフィールの説明文"
+
+#: inc/admin-theme-settings.php:89
+msgid "Enter a description for your profile."
+msgstr "プロフィールの説明を入力します。"
+
+#: inc/admin-theme-settings.php:94
+msgid "Profile Image"
+msgstr "プロフィール用の画像"
+
+#: inc/admin-theme-settings.php:100
+msgid "Select Image"
+msgstr "画像を選択"
+
+#: inc/admin-theme-settings.php:101
+msgid "Remove Image"
+msgstr "画像を削除"
+
+#: inc/admin-theme-settings.php:117
+msgid "Select Profile Image"
+msgstr "プロフィール画像を選択"
+
+#: inc/admin-theme-settings.php:118
+msgid "Use this image"
+msgstr "この画像を使用する"
+
+#: patterns/404.php:19
+msgid "ERROR 404"
+msgstr "404 エラー"
+
+#: patterns/404.php:25
+msgid "Page not found."
+msgstr "ページが見つかりません。"
+
+#: patterns/404.php:29
+msgid ""
+"The page you are looking for might have been removed, had its name changed, "
+"or is temporarily unavailable."
+msgstr ""
+"探しているページは削除されたか、名前が変更されたか、一時的に利用できない可能"
+"性があります。"
+
+#: patterns/404.php:41
+msgid "Please use the links below to find the page you are looking for:"
+msgstr "探しているページを見つけるには、以下のリンクを使用してください："
+
+#: patterns/404.php:47
+msgid "Back to Top"
+msgstr "Topに戻る"
+
+#: patterns/404.php:64
+msgid "Recent Posts"
+msgstr "最近の投稿"
+
+#: patterns/about-section.php:19
+msgid "ABOUT ME"
+msgstr "ABOUT ME"
+
+#: patterns/about-section.php:25
+msgid "About me"
+msgstr "私について"
+
+#: patterns/about-section.php:29
+msgid ""
+"Through design, we create experiences that resonate with people's hearts."
+msgstr "私たちはデザインを通して、人々の心に響く体験を創造します。"
+
+#: patterns/about-section.php:47
+msgid "Hello. I am a web designer based in Tokyo."
+msgstr "こんにちは。私は東京を拠点に活動するウェブデザイナーです。"
+
+#: patterns/about-section.php:51
+msgid ""
+"I prioritize user experience and strive for designs that balance beauty and "
+"functionality. With a mobile-first approach, I aim to deliver the best "
+"experience across all devices."
+msgstr ""
+"ユーザー体験を第一に考え、美しさと機能性を兼ね備えたデザインを心がけていま"
+"す。モバイルファーストの考え方を基本に、すべてのデバイスで最高の体験を提供す"
+"ることを目指しています。"
+
+#: patterns/about-section.php:55
+msgid ""
+"Design is not just about aesthetics; it is about enriching people's lives."
+msgstr ""
+"デザインは単なる見た目の美しさだけでなく、人々の生活をより豊かにするものだと"
+"信じています。"
+
+#: patterns/blog-section.php:17 patterns/mobile-footer-nav.php:27
+msgid "BLOG"
+msgstr "BLOG"
+
+#: patterns/blog-section.php:23
+msgid "Blog"
+msgstr "ブログ"
+
+#: patterns/blog-section.php:27
+msgid "We share our thoughts and the latest information on design."
+msgstr "デザインに関する考えや最新情報を発信します。"
+
+#: patterns/breadcrumb.php:15
+msgid "Home"
+msgstr "Home"
+
+#: patterns/comments.php:17
+msgid "Comments"
+msgstr "コメント"
+
+#: patterns/contact-section.php:22 patterns/mobile-footer-nav.php:23
+msgid "CONTACT"
+msgstr "CONTACT"
+
+#: patterns/contact-section.php:28
+msgid "Contact US"
+msgstr "お問い合わせ"
+
+#: patterns/contact-section.php:32
+msgid ""
+"Please feel free to contact us with any questions or inquiries regarding "
+"your project."
+msgstr ""
+"プロジェクトに関するご質問やお問い合わせがございましたら、お気軽にお問い合わ"
+"せください。"
+
+#: patterns/contact-section.php:42
+msgid "CONTACT US BY EMAIL"
+msgstr "メールでのお問い合わせ"
+
+#: patterns/contact-section.php:50
+msgid "CONTACT US BY PHONE"
+msgstr "電話でのお問い合わせ"
+
+#: patterns/footer-content.php:16
+msgid " All Rights Reserved."
+msgstr " All Rights Reserved."
+
+#: patterns/hero-section.php:25
+msgid "Creative"
+msgstr "Creative"
+
+#: patterns/hero-section.php:25
+msgid "Designer"
+msgstr "Designer"
+
+#: patterns/hero-section.php:29
+msgid "With designs that resonate with the heart"
+msgstr "心に響くデザインで"
+
+#: patterns/hero-section.php:29
+msgid "Bring your vision to life."
+msgstr "あなたのビジョンを実現します"
+
+#: patterns/mobile-footer-nav.php:15
+msgid "ABOUT"
+msgstr "ABOUT"
+
+#: patterns/mobile-footer-nav.php:19
+msgid "WORK"
+msgstr "WORK"
+
+#: patterns/mobile-footer-nav.php:31 patterns/service-section.php:18
+msgid "SERVICE"
+msgstr "SERVICE"
+
+#: patterns/mobile-profile.php:23 patterns/profile.php:23
+msgid "Web Designer & Developer"
+msgstr "Webデザイナー＆開発"
+
+#: patterns/mobile-profile.php:24 patterns/profile.php:24
+msgid "With creative design and development skills,"
+msgstr "クリエイティブなデザインと開発スキルで、"
+
+#: patterns/mobile-profile.php:25 patterns/profile.php:25
+msgid "I aim to provide the best user experience."
+msgstr "最高のユーザーエクスペリエンスを提供することを目指しています。"
+
+#: patterns/mobile-profile.php:31 patterns/profile.php:31
+msgid "Available for work"
+msgstr "いつでも受注可能"
+
+#: patterns/service-section.php:24
+msgid "Services provided"
+msgstr "提供サービス"
+
+#: patterns/service-section.php:28
+msgid ""
+"Services offered: We provide optimal solutions tailored to our customers' "
+"needs."
+msgstr "お客様のニーズに合わせた最適なソリューションを提供します。"
+
+#: patterns/service-section.php:43
+msgid "WEB Design"
+msgstr "ウェブデザイン"
+
+#: patterns/service-section.php:47
+msgid ""
+"We design beautiful and functional websites that prioritize the user "
+"experience."
+msgstr "ユーザー体験を重視した、美しく機能的なWebサイトをデザインします。"
+
+#: patterns/service-section.php:59
+msgid "UI/UX Design"
+msgstr "UI/UX デザイン"
+
+#: patterns/service-section.php:63
+msgid "We provide interface design that balances usability and aesthetics."
+msgstr "使いやすさと美しさを両立した、インターフェースデザインを提供します。"
+
+#: patterns/service-section.php:75
+msgid "Branding"
+msgstr "ブランディング"
+
+#: patterns/service-section.php:79
+msgid "We support branding that maximizes the value of companies and services."
+msgstr "企業やサービスの価値を最大限に引き出すブランディングをサポートします。"
+
+#: patterns/service-section.php:91
+msgid "Front-end Development"
+msgstr "フロントエンド開発"
+
+#: patterns/service-section.php:95
+msgid ""
+"We provide high-quality front-end development using modern technologies."
+msgstr "モダンな技術を使用した、高品質なフロントエンド開発を行います。"
+
+#: patterns/work-section.php:18
+msgid "WORKS"
+msgstr "WORKS"
+
+#: patterns/work-section.php:24
+msgid "Project History"
+msgstr "制作実績"
+
+#: patterns/work-section.php:28
+msgid "A showcase of some of the projects we have worked on."
+msgstr "これまでに手がけたプロジェクトの一部をご紹介します"
+
+#: patterns/work-section.php:44
+msgid "Branding site production"
+msgstr "ブランディングサイト制作"
+
+#: patterns/work-section.php:48
+msgid ""
+"We created a website to establish the brand identity of a startup company. "
+"With a modern design and intuitive UI, we maximized the appeal of the brand."
+msgstr ""
+"企業のブランドアイデンティティを確立するWebサイトを制作。モダンなデザインと直"
+"感的なUIで、ブランドの魅力を最大限に引き出しました。"
+
+#: patterns/work-section.php:63
+msgid "Mobile App UI Design"
+msgstr "モバイルアプリUI設計"
+
+#: patterns/work-section.php:67
+msgid ""
+"We were responsible for the UI/UX design of an e-commerce application. "
+"Focusing on usability, we designed a seamless flow to purchase."
+msgstr ""
+"ECアプリケーションのUI/UXデザインを担当。ユーザビリティを重視し、購入までの導"
+"線をシームレスに設計しました。"
+
+#: patterns/work-section.php:82
+msgid "Portfolio Site"
+msgstr "ポートフォリオサイト"
+
+#: patterns/work-section.php:85
+msgid ""
+"We designed a portfolio site for creators. The structure focuses on visuals "
+"to maximize the appeal of the works."
+msgstr ""
+"クリエイター向けのポートフォリオサイトをデザイン。作品の魅力を最大限に伝える"
+"ビジュアル重視の構成を実現しました。"

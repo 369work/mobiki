@@ -1,0 +1,53 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","theme":"mobiki"} /-->
+
+<!-- wp:group {"className":"layout-wrapper","layout":{"type":"constrained"}} -->
+<div class="wp-block-group layout-wrapper">
+
+    <!-- wp:template-part {"slug":"side-menu","tagName":"aside","theme":"mobiki"} /-->
+
+    <!-- wp:template-part {"slug":"side-profile","tagName":"aside","theme":"mobiki"} /-->
+
+    <!-- wp:group {"tagName":"main","className":"main-container","layout":{"type":"constrained"}} -->
+    <main class="wp-block-group main-container">
+
+        <!-- wp:pattern {"slug":"mobiki/breadcrumb"} /-->
+
+        <!-- wp:group {"className":"index-content","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group index-content">
+
+            <!-- wp:post-title {"level":1,"className":"section-title section-title-decoration"} /-->
+
+            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+            <div class="wp-block-group space-sm">
+                <!-- wp:post-date {"className":"blog-date"} /-->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:post-featured-image {"style":{"spacing":{"margin":{"top":"30px","bottom":"30px"}}}} /-->
+
+            <!-- wp:post-content {"style":{"spacing":{"margin":{"top":"30px","bottom":"30px"}}}} /-->
+
+            <!-- wp:group {"className":"space-lg"} -->
+            <div class="wp-block-group space-lg">
+                <!-- wp:separator -->
+                <hr class="wp-block-separator has-alpha-channel-opacity" />
+                <!-- /wp:separator -->
+                <!-- wp:post-terms {"term":"category","className":"post-category-badge"} /-->
+                <!-- wp:post-terms {"term":"post_tag","className":"post-tag-badge"} /-->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:pattern {"slug":"mobiki/comments"} /-->
+
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:template-part {"slug":"footer","tagName":"footer","theme":"mobiki"} /-->
+    </main>
+    <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"mobile-nav","tagName":"nav","theme":"mobiki"} /-->
+
+<!-- wp:pattern {"slug":"mobiki/scroll-button"} /-->
