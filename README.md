@@ -165,7 +165,7 @@ mobiki/
 
 1. 動画ファイル（MP4形式推奨）を用意
 2. 動画を`wp-content/uploads/`フォルダにアップロード
-3. 以下のコードを`templates/index.html`のヒーローセクション前に追加：
+3. 以下のコードを`templates/front-page.html`のlayout-wrapperクラスの前に追加：
 
 ```html
 <!-- wp:html -->
