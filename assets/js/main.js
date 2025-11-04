@@ -33,16 +33,16 @@
             if (!target) {
                 throw new Error('Target element not found');
             }
-            
+
             const targetPosition = target.offsetTop - offset;
-            
+
             // スクロール可能かチェック
             if (typeof window.scrollTo !== 'function') {
                 // フォールバック
                 document.documentElement.scrollTop = targetPosition;
                 return;
             }
-            
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
@@ -106,22 +106,22 @@
     const initSmoothScrollLinks = () => {
         try {
             const anchors = document.querySelectorAll('a[href^="#"]');
-            
+
             anchors.forEach(anchor => {
                 try {
                     anchor.addEventListener('click', function(e) {
                         try {
                             const href = this.getAttribute('href');
                             if (!href || href === '#') return;
-                            
+
                             e.preventDefault();
                             const target = document.querySelector(href);
-                            
+
                             if (target) {
                                 // ヘッダーの高さを考慮したオフセット
                                 const headerOffset = 80;
                                 smoothScrollTo(target, headerOffset);
-                                
+
                                 // フォーカス管理（アクセシビリティ向上）
                                 if (target.tabIndex < 0) {
                                     target.tabIndex = -1;
@@ -145,7 +145,7 @@
     const initScrollToTopButton = () => {
         try {
             const scrollToTopBtn = document.querySelector('.scroll-to-top');
-            
+
             if (!scrollToTopBtn) return;
 
             let isScrolling = false;
@@ -155,7 +155,7 @@
                 try {
                     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
                     const shouldShow = scrollPosition > 300;
-                    
+
                     if (shouldShow && !scrollToTopBtn.classList.contains('visible')) {
                         scrollToTopBtn.classList.add('visible');
                         scrollToTopBtn.setAttribute('aria-hidden', 'false');
@@ -175,15 +175,15 @@
                 try {
                     e.preventDefault();
                     if (isScrolling) return; // 重複実行防止
-                    
+
                     isScrolling = true;
                     smoothScrollTo(document.body, 0);
-                    
+
                     // スクロール完了後にフラグをリセット
                     setTimeout(() => {
                         isScrolling = false;
                     }, 1000);
-                    
+
                 } catch (error) {
                     logError(error, 'Scroll to top click handler');
                     isScrolling = false;
@@ -207,14 +207,14 @@
     const initFormHandling = () => {
         try {
             const forms = document.querySelectorAll('form');
-            
+
             forms.forEach(form => {
                 form.addEventListener('submit', function(e) {
                     try {
                         // 基本的なバリデーション
                         const requiredFields = form.querySelectorAll('[required]');
                         let hasErrors = false;
-                        
+
                         requiredFields.forEach(field => {
                             if (!field.value.trim()) {
                                 field.classList.add('error');
@@ -223,7 +223,7 @@
                                 field.classList.remove('error');
                             }
                         });
-                        
+
                         if (hasErrors) {
                             e.preventDefault();
                             // 最初のエラーフィールドにフォーカス
@@ -267,6 +267,200 @@
         }
     };
 
+    // フッターナビゲーションメニューの初期化（アクセシビリティ対応）
+    const initFooterNavigation = () => {
+        try {
+            const navToggle = document.querySelector('.footer-nav-toggle');
+            const navMenu = document.querySelector('.footer-nav-menu');
+            const navClose = document.querySelector('.footer-nav-close');
+
+            console.log('[Footer Nav] navToggle:', navToggle);
+            console.log('[Footer Nav] navMenu:', navMenu);
+            console.log('[Footer Nav] navClose:', navClose);
+
+            if (!navToggle || !navMenu) {
+                console.warn('[Footer Nav] Required elements not found');
+                return;
+            }
+
+            console.log('[Footer Nav] Initialization started');
+
+            // オーバーレイ要素を取得
+            const overlay = document.querySelector('.footer-nav-overlay');
+            if (!overlay) {
+                console.error('[Footer Nav] Overlay element not found');
+                return;
+            }
+
+            console.log('[Footer Nav] overlay:', overlay);
+
+            // フォーカス可能な要素を取得
+            const getFocusableElements = () => {
+                const focusableSelectors = [
+                    '.footer-nav-close',
+                    '.footer-nav-links a',
+                    'button:not([disabled])',
+                    'a[href]:not([disabled])'
+                ].join(', ');
+                return Array.from(navMenu.querySelectorAll(focusableSelectors))
+                    .filter(el => el.offsetParent !== null); // 表示されている要素のみ
+            };
+
+            // メニューを開く
+            const openMenu = () => {
+                navMenu.classList.add('active');
+                overlay.classList.add('active');
+                navToggle.classList.add('active');
+                navToggle.setAttribute('aria-expanded', 'true');
+                navMenu.setAttribute('aria-hidden', 'false');
+                overlay.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+
+                // 最初のフォーカス可能な要素（閉じるボタン）にフォーカス
+                setTimeout(() => {
+                    if (navClose) {
+                        navClose.focus();
+                    }
+                }, 100);
+
+                console.log('[Footer Nav] Menu opened');
+            };
+
+            // メニューを閉じる
+            const closeMenu = () => {
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navMenu.setAttribute('aria-hidden', 'true');
+                overlay.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+
+                // トグルボタンにフォーカスを戻す
+                navToggle.focus();
+
+                console.log('[Footer Nav] Menu closed');
+            };
+
+            // フォーカストラップ（メニュー内でフォーカスをループ）
+            const trapFocus = (e) => {
+                if (!navMenu.classList.contains('active')) return;
+
+                const focusableElements = getFocusableElements();
+                if (focusableElements.length === 0) return;
+
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                // Tabキーでのフォーカス移動
+                if (e.key === 'Tab') {
+                    if (e.shiftKey) {
+                        // Shift + Tab（逆方向）
+                        if (document.activeElement === firstElement) {
+                            e.preventDefault();
+                            lastElement.focus();
+                        }
+                    } else {
+                        // Tab（順方向）
+                        if (document.activeElement === lastElement) {
+                            e.preventDefault();
+                            firstElement.focus();
+                        }
+                    }
+                }
+
+                // 矢印キーでのナビゲーション
+                if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    const currentIndex = focusableElements.indexOf(document.activeElement);
+
+                    if (e.key === 'ArrowDown') {
+                        const nextIndex = (currentIndex + 1) % focusableElements.length;
+                        focusableElements[nextIndex].focus();
+                    } else {
+                        const prevIndex = currentIndex <= 0 ? focusableElements.length - 1 : currentIndex - 1;
+                        focusableElements[prevIndex].focus();
+                    }
+                }
+            };
+
+            // トグルボタンのクリック
+            navToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (navMenu.classList.contains('active')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            // トグルボタンのキーボード操作（Enter/Space）
+            navToggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    navToggle.click();
+                }
+            });
+
+            // 閉じるボタンのクリック
+            if (navClose) {
+                navClose.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    closeMenu();
+                });
+
+                // 閉じるボタンのキーボード操作
+                navClose.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        closeMenu();
+                    }
+                });
+            }
+
+            // オーバーレイのクリック
+            overlay.addEventListener('click', () => {
+                closeMenu();
+            });
+
+            // キーボードイベント
+            document.addEventListener('keydown', (e) => {
+                // Escapeキーで閉じる
+                if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                    e.preventDefault();
+                    closeMenu();
+                    return;
+                }
+
+                // フォーカストラップ
+                if (navMenu.classList.contains('active')) {
+                    trapFocus(e);
+                }
+            });
+
+            // メニュー内のリンクをクリックしたら閉じる
+            const navLinks = navMenu.querySelectorAll('.footer-nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    closeMenu();
+                });
+
+                // Enterキーでリンクをアクティブ化
+                link.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        link.click();
+                    }
+                });
+            });
+
+            console.log('[Footer Nav] Accessibility features enabled');
+
+        } catch (error) {
+            logError(error, 'initFooterNavigation');
+        }
+    };
+
     // メイン初期化関数
     const init = () => {
         try {
@@ -275,7 +469,8 @@
             initScrollToTopButton();
             initFormHandling();
             initLazyLoading();
-            
+            initFooterNavigation(); // フッターナビゲーションを初期化
+
             // 初期化完了をログ出力
             if (console && console.log) {
                 console.log('[Mobiki Theme] Initialization completed successfully');

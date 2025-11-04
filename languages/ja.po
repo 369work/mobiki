@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mobiki\n"
-"POT-Creation-Date: 2025-11-04 05:57+0900\n"
-"PO-Revision-Date: 2025-11-04 05:59+0900\n"
+"POT-Creation-Date: 2025-11-04 12:01+0900\n"
+"PO-Revision-Date: 2025-11-04 12:02+0900\n"
 "Last-Translator: 369work\n"
 "Language-Team: 369work\n"
 "Language: ja\n"
@@ -22,7 +22,7 @@ msgstr "ヒーローセクション"
 msgid "Sections"
 msgstr "セクション"
 
-#: inc/admin-theme-settings.php:9 inc/admin-theme-settings.php:63
+#: inc/admin-theme-settings.php:9 inc/admin-theme-settings.php:83
 msgid "Mobiki Theme Settings"
 msgstr "Mobikiテーマ設定"
 
@@ -30,15 +30,27 @@ msgstr "Mobikiテーマ設定"
 msgid "Mobiki Settings"
 msgstr "Mobiki設定"
 
-#: inc/admin-theme-settings.php:53
+#: inc/admin-theme-settings.php:34
+msgid "Select Profile Image"
+msgstr "プロフィール画像を選択"
+
+#: inc/admin-theme-settings.php:35
+msgid "Use this image"
+msgstr "この画像を使用する"
+
+#: inc/admin-theme-settings.php:47
+msgid "You do not have sufficient permissions to access this page."
+msgstr "このページにアクセスするための十分な権限がありません。"
+
+#: inc/admin-theme-settings.php:73
 msgid "Settings saved."
 msgstr "設定の保存をしました。"
 
-#: inc/admin-theme-settings.php:64
+#: inc/admin-theme-settings.php:84
 msgid "Configure the settings for the Mobiki theme."
 msgstr "Mobiki テーマの設定を構成します。"
 
-#: inc/admin-theme-settings.php:65
+#: inc/admin-theme-settings.php:85
 msgid ""
 "You will register the phone number, email address, and icon to be used in "
 "the theme profile."
@@ -46,41 +58,33 @@ msgstr ""
 "テーマのプロフィールで使用する電話番号、メールアドレス、アイコンを登録しま"
 "す。"
 
-#: inc/admin-theme-settings.php:70
+#: inc/admin-theme-settings.php:90
 msgid "Phone Number"
 msgstr "電話番号"
 
-#: inc/admin-theme-settings.php:76
+#: inc/admin-theme-settings.php:96
 msgid "Contact Email"
 msgstr "問い合わせ用のメールアドレス"
 
-#: inc/admin-theme-settings.php:83
+#: inc/admin-theme-settings.php:103
 msgid "Profile Description"
 msgstr "プロフィールの説明文"
 
-#: inc/admin-theme-settings.php:89
+#: inc/admin-theme-settings.php:109
 msgid "Enter a description for your profile."
 msgstr "プロフィールの説明を入力します。"
 
-#: inc/admin-theme-settings.php:94
+#: inc/admin-theme-settings.php:114
 msgid "Profile Image"
 msgstr "プロフィール用の画像"
 
-#: inc/admin-theme-settings.php:100
+#: inc/admin-theme-settings.php:120
 msgid "Select Image"
 msgstr "画像を選択"
 
-#: inc/admin-theme-settings.php:101
+#: inc/admin-theme-settings.php:121
 msgid "Remove Image"
 msgstr "画像を削除"
-
-#: inc/admin-theme-settings.php:117
-msgid "Select Profile Image"
-msgstr "プロフィール画像を選択"
-
-#: inc/admin-theme-settings.php:118
-msgid "Use this image"
-msgstr "この画像を使用する"
 
 #: patterns/404.php:19
 msgid "ERROR 404"
@@ -188,23 +192,39 @@ msgstr "メールでのお問い合わせ"
 msgid "CONTACT US BY PHONE"
 msgstr "電話でのお問い合わせ"
 
-#: patterns/footer-content.php:16
+#: patterns/footer-content.php:13 patterns/footer-content.php:30
+msgid "Posts"
+msgstr "投稿一覧"
+
+#: patterns/footer-content.php:33
+msgid "All Posts"
+msgstr "全ての投稿"
+
+#: patterns/footer-content.php:38
+msgid "Categories"
+msgstr "カテゴリ"
+
+#: patterns/footer-content.php:47
+msgid "Popular Tags"
+msgstr "人気のタグ"
+
+#: patterns/footer-content.php:64
 msgid " All Rights Reserved."
 msgstr " All Rights Reserved."
 
-#: patterns/hero-section.php:25
+#: patterns/hero-section.php:24
 msgid "Creative"
 msgstr "Creative"
 
-#: patterns/hero-section.php:25
+#: patterns/hero-section.php:24
 msgid "Designer"
 msgstr "Designer"
 
-#: patterns/hero-section.php:29
+#: patterns/hero-section.php:28
 msgid "With designs that resonate with the heart"
 msgstr "心に響くデザインで"
 
-#: patterns/hero-section.php:29
+#: patterns/hero-section.php:28
 msgid "Bring your vision to life."
 msgstr "あなたのビジョンを実現します"
 

@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Title: Hero Section
  * Slug: mobiki/hero-section
- * Categories: mobiki-hero
+ * Categories: mobiki-sections
  * Description: Hero section with decorative elements, title, subtitle, and image.
  */
 ?>
