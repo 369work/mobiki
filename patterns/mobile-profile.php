@@ -10,7 +10,7 @@
 $profile_description = get_theme_mod('mobiki_profile_description', '');
 ?>
 <!-- wp:group {"className":"mobile-profile-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group mobile-profile-card" aria-label="Mobile Profile Information">
+<div class="wp-block-group mobile-profile-card" aria-label="<?php esc_attr_e('Mobile Profile Card', 'mobiki'); ?>">
     <!-- wp:paragraph {"className":"profile-avatar"} -->
     <p class="profile-avatar">👨‍💻</p>
     <!-- /wp:paragraph -->

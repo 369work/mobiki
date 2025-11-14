@@ -8,7 +8,7 @@
 ?>
 
 <!-- wp:html -->
-<button class="scroll-to-top" aria-label="Scroll to top" type="button">
-    <span role="img" aria-label="Up arrow">⬆️</span>
+<button class="scroll-to-top" aria-label="<?php esc_attr_e('Scroll to top', 'mobiki'); ?>" type="button">
+    <span role="img" aria-label="<?php esc_attr_e('Up arrow', 'mobiki'); ?>">⬆️</span>
 </button>
 <!-- /wp:html -->

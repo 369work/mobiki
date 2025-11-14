@@ -1,12 +1,13 @@
 === Mobiki ===
 Contributors: 369work
+Author URI: https://profiles.wordpress.org/369work/
 Requires at least: 6.6
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.0.0
+Stable tag: 1.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: blog, portfolio, one-column, two-columns, three-columns, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks
+Tags: blog, portfolio, one-column, custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready
 
 A mobile-first portfolio theme with Nordic-inspired design and full site editing support.
 
@@ -166,6 +167,12 @@ As a block theme, many customizations can be done within the editor. A child the
 = 1.0.0 =
 Initial release of mobiki theme.
 
+= 1.0.1 =
+Changes style and page navigation.
+
+= 1.1 =
+Changes style and Patterns.
+
 
 == Resources ==
 
@@ -191,12 +198,6 @@ Initial release of mobiki theme.
 * Safari (latest)
 * Edge (latest)
 * Mobile browsers (iOS Safari, Chrome for Android)
-
-= Performance =
-* CSS: 1 file (main.css)
-* JavaScript: 1 file (main.js)
-* External libraries: None (Pure JavaScript)
-* Optimized page size
 
 == Troubleshooting ==
 
@@ -228,19 +229,21 @@ Website: https://profiles.wordpress.org/369work/
 
 == Copyright ==
 
-mobiki WordPress Theme, Copyright 2025 Miroku
+Mobiki WordPress Theme, Copyright 2025 369work
 mobiki is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
+the Free Software Foundation, version 3 of the License.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
 ---
 
-Thank you for choosing mobiki! 🎉
+Thank you for choosing Mobiki! 🎉

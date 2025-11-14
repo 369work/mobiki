@@ -38,7 +38,7 @@ $phone_number = get_theme_mod('mobiki_phone_number', '123-456-7890');
     <div class="wp-block-group contact-buttons">
         <!-- wp:paragraph  -->
         <p><a href="mailto:<?php echo esc_attr($admin_email); ?>" class="contact-btn">
-                <span class="contact-icon" role="img" aria-label="Mail Icon">✉️</span>
+                <span class="contact-icon" role="img" aria-label="<?php esc_attr_e('Mail Icon', 'mobiki'); ?>">✉️</span>
                 <span><?php esc_html_e('CONTACT US BY EMAIL', 'mobiki'); ?></span>
             </a></p>
 
@@ -46,7 +46,7 @@ $phone_number = get_theme_mod('mobiki_phone_number', '123-456-7890');
         <!-- wp:paragraph  -->
         <p>
             <a href="tel:<?php echo esc_attr($phone_number); ?>" class="contact-btn contact-btn-phone">
-                <span class="contact-icon" role="img" aria-label="Phone Icon">📞</span>
+                <span class="contact-icon" role="img" aria-label="<?php esc_attr_e('Phone Icon', 'mobiki'); ?>">📞</span>
                 <span><?php esc_html_e('CONTACT US BY PHONE', 'mobiki'); ?></span>
             </a>
         </p>

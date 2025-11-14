@@ -165,7 +165,7 @@ mobiki/
 
 1. 動画ファイル（MP4形式推奨）を用意
 2. 動画を`wp-content/uploads/`フォルダにアップロード
-3. 以下のコードを`templates/front-page.html`のlayout-wrapperクラスの前に追加：
+3. 以下のコードをtemplates/front-page.htmlのlayout-wrapperクラスの前に追加：
 
 ```html
 <!-- wp:html -->
@@ -258,11 +258,11 @@ Miroku
 Website: https://profiles.wordpress.org/369work/
 
 ## 著作権情報
-Copyright 2025 Miroku. All rights reserved.
+Copyright 2025 369work. All rights reserved.
 
 ## バージョン
 
-1.0.0
+1.1
 
 ## 更新履歴
 
@@ -276,6 +276,14 @@ Copyright 2025 Miroku. All rights reserved.
 - ✨ スムーズスクロールアニメーション実装
 - 🎯 ブロックエディター完全対応
 
+### 1.0.1 (2025-11-06)
+- 🎨 スタイルとページナビゲーションの変更
 ---
 
-**mobiki**をお選びいただき、ありがとうございます！ 🎉
+### 1.1 (2025-11-14)
+- ✨ サイドメニューのパターン化
+- 🎨 バグ修正
+- 🎨 スタイルの微調整
+
+
+**Mobiki**をお選びいただき、ありがとうございます！ 🎉

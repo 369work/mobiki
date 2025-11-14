@@ -10,17 +10,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-/**
- * Proper ob_end_flush() for all levels
- *
- * This replaces the WordPress `wp_ob_end_flush_all()` function
- * with a replacement that doesn't cause PHP notices.
- */
-remove_action('shutdown', 'wp_ob_end_flush_all', 1);
-add_action('shutdown', function () {
-    while (@ob_end_flush());
-});
-
 // Theme Version
 if (!defined('MOBIKI_THEME_VERSION')) {
     define('MOBIKI_THEME_VERSION', wp_get_theme()->get('Version'));
@@ -155,16 +144,6 @@ function mobiki_register_block_pattern_categories() {
 }
 add_action( 'init', 'mobiki_register_block_pattern_categories' );
 
-/**
- * 画像にloading="lazy"属性を自動追加
- */
-function mobiki_add_lazy_loading_to_images( $content ) {
-    // img タグにloading="lazy"を追加
-    $content = preg_replace('/<img((?![^>]*loading=)[^>]*)>/i', '<img$1 loading="lazy">', $content);
-    return $content;
-}
-add_filter( 'the_content', 'mobiki_add_lazy_loading_to_images' );
-add_filter( 'post_thumbnail_html', 'mobiki_add_lazy_loading_to_images' );
 
 /**
  * 抜粋の長さを調整

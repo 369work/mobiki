@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mobiki\n"
-"POT-Creation-Date: 2025-11-04 12:01+0900\n"
-"PO-Revision-Date: 2025-11-04 12:02+0900\n"
+"POT-Creation-Date: 2025-11-14 12:41+0900\n"
+"PO-Revision-Date: 2025-11-14 12:42+0900\n"
 "Last-Translator: 369work\n"
 "Language-Team: 369work\n"
 "Language: ja\n"
@@ -14,11 +14,11 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html;esc_html__;esc_atter_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:149
+#: functions.php:138
 msgid "Hero Section"
 msgstr "ヒーローセクション"
 
-#: functions.php:153
+#: functions.php:142
 msgid "Sections"
 msgstr "セクション"
 
@@ -148,17 +148,26 @@ msgstr ""
 "デザインは単なる見た目の美しさだけでなく、人々の生活をより豊かにするものだと"
 "信じています。"
 
-#: patterns/blog-section.php:17 patterns/mobile-footer-nav.php:27
+#: patterns/blog-archive.php:29 patterns/blog-section.php:17
+#: patterns/mobile-footer-nav.php:28
 msgid "BLOG"
 msgstr "BLOG"
 
-#: patterns/blog-section.php:23
+#: patterns/blog-archive.php:47 patterns/blog-section.php:23
 msgid "Blog"
 msgstr "ブログ"
 
-#: patterns/blog-section.php:27
+#: patterns/blog-archive.php:59 patterns/blog-section.php:27
 msgid "We share our thoughts and the latest information on design."
 msgstr "デザインに関する考えや最新情報を発信します。"
+
+#: patterns/blog-archive.php:88 patterns/search-results.php:36
+msgid "No posts found."
+msgstr "投稿は見つかりませんでした。"
+
+#: patterns/blog-section.php:58
+msgid "View All Posts"
+msgstr "すべての投稿を見る"
 
 #: patterns/breadcrumb.php:15
 msgid "Home"
@@ -168,7 +177,7 @@ msgstr "Home"
 msgid "Comments"
 msgstr "コメント"
 
-#: patterns/contact-section.php:22 patterns/mobile-footer-nav.php:23
+#: patterns/contact-section.php:22 patterns/mobile-footer-nav.php:24
 msgid "CONTACT"
 msgstr "CONTACT"
 
@@ -200,15 +209,23 @@ msgstr "投稿一覧"
 msgid "All Posts"
 msgstr "全ての投稿"
 
-#: patterns/footer-content.php:38
+#: patterns/footer-content.php:40
+msgid "Search for:"
+msgstr "検索:"
+
+#: patterns/footer-content.php:45
+msgid "Search"
+msgstr "検索"
+
+#: patterns/footer-content.php:55
 msgid "Categories"
 msgstr "カテゴリ"
 
-#: patterns/footer-content.php:47
+#: patterns/footer-content.php:64
 msgid "Popular Tags"
 msgstr "人気のタグ"
 
-#: patterns/footer-content.php:64
+#: patterns/footer-content.php:81
 msgid " All Rights Reserved."
 msgstr " All Rights Reserved."
 
@@ -228,15 +245,15 @@ msgstr "心に響くデザインで"
 msgid "Bring your vision to life."
 msgstr "あなたのビジョンを実現します"
 
-#: patterns/mobile-footer-nav.php:15
+#: patterns/mobile-footer-nav.php:16
 msgid "ABOUT"
 msgstr "ABOUT"
 
-#: patterns/mobile-footer-nav.php:19
+#: patterns/mobile-footer-nav.php:20
 msgid "WORK"
 msgstr "WORK"
 
-#: patterns/mobile-footer-nav.php:31 patterns/service-section.php:18
+#: patterns/mobile-footer-nav.php:32 patterns/service-section.php:18
 msgid "SERVICE"
 msgstr "SERVICE"
 
@@ -255,6 +272,14 @@ msgstr "最高のユーザーエクスペリエンスを提供することを目
 #: patterns/mobile-profile.php:31 patterns/profile.php:31
 msgid "Available for work"
 msgstr "いつでも受注可能"
+
+#: patterns/post-navigation.php:12
+msgid "Previous: "
+msgstr "前："
+
+#: patterns/post-navigation.php:13
+msgid "Next: "
+msgstr "次:："
 
 #: patterns/service-section.php:24
 msgid "Services provided"

@@ -31,6 +31,23 @@
 
 				<ul class="footer-nav-links">
 					<li><a href="<?php echo esc_url(get_post_type_archive_link('post')); ?>"><?php esc_html_e('All Posts', 'mobiki'); ?></a></li>
+				</ul>
+
+				<!-- Search Form -->
+				<div class="footer-search-form">
+					<form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+						<label for="footer-search-input">
+							<span class="screen-reader-text"><?php esc_html_e('Search for:', 'mobiki'); ?></span>
+							<input type="search" id="footer-search-input" class="search-field" placeholder="<?php esc_attr_e('Search posts...', 'mobiki'); ?>" value="<?php echo get_search_query(); ?>" name="s" aria-label="<?php esc_attr_e('Search for posts', 'mobiki'); ?>" />
+						</label>
+						<button type="submit" class="search-submit" aria-label="<?php esc_attr_e('Submit search', 'mobiki'); ?>">
+							<span class="search-icon" aria-hidden="true">🔍</span>
+							<span class="search-text"><?php esc_html_e('Search', 'mobiki'); ?></span>
+						</button>
+					</form>
+				</div>
+
+				<ul class="footer-nav-links">
 					<?php
 					// Category list
 					$categories = get_categories(array('hide_empty' => true, 'number' => 6));

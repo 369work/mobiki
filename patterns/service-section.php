@@ -36,7 +36,7 @@
         <!-- wp:group {"className":"service-item","tagName":"article","layout":{"type":"constrained"}} -->
         <article class="wp-block-group service-item">
             <!-- wp:paragraph {"className":"service-icon"} -->
-            <p class="service-icon" role="img" aria-label="Web Design Icon">💻</p>
+            <p class="service-icon" role="img" aria-label="<?php esc_attr_e('Web Design Icon', 'mobiki'); ?>">💻</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:heading {"level":3,"className":"service-name"} -->
@@ -52,7 +52,7 @@
         <!-- wp:group {"className":"service-item","tagName":"article","layout":{"type":"constrained"}} -->
         <article class="wp-block-group service-item">
             <!-- wp:paragraph {"className":"service-icon"} -->
-            <p class="service-icon" role="img" aria-label="UI/UX Icon">📐</p>
+            <p class="service-icon" role="img" aria-label="<?php esc_attr_e('UI/UX Icon', 'mobiki'); ?>">📐</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:heading {"level":3,"className":"service-name"} -->
@@ -68,7 +68,7 @@
         <!-- wp:group {"className":"service-item","tagName":"article","layout":{"type":"constrained"}} -->
         <article class="wp-block-group service-item">
             <!-- wp:paragraph {"className":"service-icon"} -->
-            <p class="service-icon" role="img" aria-label="Branding Icon">🎯</p>
+            <p class="service-icon" role="img" aria-label="<?php esc_attr_e('Branding Icon', 'mobiki'); ?>">🎯</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:heading {"level":3,"className":"service-name"} -->
@@ -84,7 +84,7 @@
         <!-- wp:group {"className":"service-item","tagName":"article","layout":{"type":"constrained"}} -->
         <article class="wp-block-group service-item">
             <!-- wp:paragraph {"className":"service-icon"} -->
-            <p class="service-icon" role="img" aria-label="Front-end Development Icon">⚡</p>
+            <p class="service-icon" role="img" aria-label="<?php esc_attr_e('Front-end Development Icon', 'mobiki'); ?>">⚡</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:heading {"level":3,"className":"service-name"} -->
