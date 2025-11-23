@@ -4,7 +4,7 @@ Author URI: https://profiles.wordpress.org/369work/
 Requires at least: 6.6
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, portfolio, one-column, custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready
@@ -172,6 +172,10 @@ Changes style and page navigation.
 
 = 1.1 =
 Changes style and Patterns.
+
+= 1.2 =
+README translation.
+Screenshot changed.
 
 
 == Resources ==

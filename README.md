@@ -1,124 +1,131 @@
-# Mobiki - WordPressブロックテーマ
+# Mobiki - WordPress Block Theme
 
-北欧風デザインを採用したモバイルファーストのポートフォリオテーマです。
+A mobile-first portfolio theme with Nordic design aesthetics.
 
-## 特徴
+**Languages / 言語:** [English](#english) | [日本語](README.ja.md)
 
-- 📱 **モバイルファースト設計** - スマートフォンでの閲覧を最優先に設計
-- 🎨 **北欧風カラーパレット** - 落ち着いた色合いで洗練された印象
-- ♿ **アクセシビリティ対応** - すべてのユーザーに配慮した設計
-- ✨ **美しいアニメーション効果** - スムーズなスクロールとフェードイン
-- 🎯 **ブロックエディター完全対応** - WordPress 6.0以降のフルサイト編集機能に対応
-- 📐 **レスポンシブデザイン** - あらゆるデバイスで美しく表示
-- 🖥️ **PC用サイドメニュー** - デスクトップでは左側に固定メニューを表示
-- 👤 **プロフィールカード** - デスクトップでは右側にプロフィールを表示
+---
 
-## デモ
+## Features
 
-### デスクトップレイアウト
-- 中央: メインコンテンツ（最大幅600px）
-- 左側: ナビゲーションメニュー + SNSボタン
-- 右側: プロフィールカード
-- スクロールトップボタン
+- 📱 **Mobile-First Design** - Optimized for smartphone viewing
+- 🎨 **Nordic Color Palette** - Sophisticated and calming color scheme
+- ♿ **Accessibility Ready** - Designed with all users in mind
+- ✨ **Beautiful Animations** - Smooth scrolling and fade-in effects
+- 🎯 **Full Block Editor Support** - Compatible with WordPress 6.0+ Full Site Editing
+- 📐 **Responsive Design** - Beautiful display on all devices
+- 🖥️ **Desktop Side Menu** - Fixed navigation menu on the left for desktop
+- 👤 **Profile Card** - Profile display on the right for desktop
 
-### モバイルレイアウト
-- ヒーローセクション直下にプロフィールカード
-- 下部固定のフッターナビゲーション
-- 右下にスクロールトップボタン
+## Demo
 
-## カラーパレット
+### Desktop Layout
+- Center: Main content (max-width 600px)
+- Left: Navigation menu + SNS buttons
+- Right: Profile card
+- Scroll to top button
 
-### メインカラー
-- **プライマリー**: #5D7B89 - メインのブルーグレー
-- **プライマリーダーク**: #4A6270 - より濃いブルーグレー
-- **プライマリーライト**: #7A98A6 - より明るいブルーグレー
+### Mobile Layout
+- Profile card below hero section
+- Fixed footer navigation
+- Scroll to top button in bottom right
 
-### アクセントカラー
-- **アクセント（ミント）**: #8ABAD3 - 爽やかなミントブルー
-- **アクセント（コーラル）**: #D98F7E - 温かみのあるコーラルピンク
-- **アクセント（マスタード）**: #D9A86C - 落ち着いたマスタードイエロー
-- **アクセント（セージ）**: #9CAF88 - ナチュラルなセージグリーン
+## Color Palette
 
-### その他のカラー
-- **セカンダリー**: #A8B5A5 - 柔らかなグレーグリーン
-- **テキストダーク**: #2D3436 - メインテキスト
-- **テキストミディアム**: #636E72 - サブテキスト
-- **テキストライト**: #95A5A6 - 補助テキスト
-- **背景ライト**: #F8F9FA - 明るい背景
-- **背景ウォーム**: #FAF7F5 - 温かみのある背景
-- **ボーダーライト**: #E8EBE8 - 境界線
+### Main Colors
+- **Primary**: #5D7B89 - Main blue-gray
+- **Primary Dark**: #4A6270 - Darker blue-gray
+- **Primary Light**: #7A98A6 - Lighter blue-gray
 
-## インストール方法
+### Accent Colors
+- **Accent (Mint)**: #8ABAD3 - Fresh mint blue
+- **Accent (Coral)**: #D98F7E - Warm coral pink
+- **Accent (Mustard)**: #D9A86C - Calm mustard yellow
+- **Accent (Sage)**: #9CAF88 - Natural sage green
 
-### 基本インストール
-1. 管理画面で「外観」→「テーマ」へ移動します。
-2. 「新規追加」をクリックします。
-3. 検索フォームに「Mobiki」と入力します。
-4. インストールします。
-5. 「有効化」をクリックします。
-6. 管理画面でMobikiの設定メニューへ移動します。
+### Other Colors
+- **Secondary**: #A8B5A5 - Soft gray-green
+- **Text Dark**: #2D3436 - Main text
+- **Text Medium**: #636E72 - Sub text
+- **Text Light**: #95A5A6 - Auxiliary text
+- **Background Light**: #F8F9FA - Light background
+- **Background Warm**: #FAF7F5 - Warm background
+- **Border Light**: #E8EBE8 - Border
 
-## テーマの構成
+## Installation
+
+### Basic Installation
+1. Navigate to "Appearance" → "Themes" in the admin dashboard.
+2. Click "Add New".
+3. Search for "Mobiki" in the search form.
+4. Click "Install".
+5. Click "Activate".
+6. Navigate to the Mobiki theme settings menu in the admin dashboard.
+
+## Theme Structure
 
 ```
 mobiki/
-├── style.css                 # テーマ情報（必須）
-├── theme.json               # ブロックテーマ設定（必須）
-├── functions.php            # テーマ機能
-├── README.md                # このファイル
-├── templates/               # テンプレートファイル
-│   ├── index.html          # メインテンプレート（トップページ）
-│   ├── single.html         # 投稿ページテンプレート
-│   └── page.html           # 固定ページテンプレート
-├── parts/                   # テンプレートパーツ
-│   ├── header.html         # ヘッダー
-│   ├── footer.html         # フッター
-│   ├── side-menu.html      # PC用サイドメニュー
-│   ├── side-profile.html   # PC用プロフィールカード（右側）
-│   └── mobile-nav.html     # モバイル用フッターナビゲーション
-├── assets/                  # アセットファイル
+├── style.css                 # Theme information (required)
+├── theme.json               # Block theme settings (required)
+├── functions.php            # Theme functions
+├── README.md                # This file
+├── templates/               # Template files
+│   ├── front-page.html     # Home template (homepage)
+│   ├── index.html          # Main template
+│   ├── single.html         # Single post template
+│   └── page.html           # Page template
+├── parts/                   # Template parts
+│   ├── header.html         # Header
+│   ├── footer.html         # Footer
+│   ├── side-menu.html      # Desktop side menu
+│   ├── side-profile.html   # Desktop profile card (right side)
+│   └── mobile-nav.html     # Mobile footer navigation
+├── assets/                  # Asset files
 │   ├── css/
-│   │   └── main.css        # メインスタイル
+│   │   └── main.css        # Main stylesheet
 │   └── js/
-│       └── main.js         # メインスクリプト
-└── patterns/                # ブロックパターン（任意）
+│       └── main.js         # Main script
+└── patterns/                # Block patterns (optional)
 ```
 
-## カスタマイズガイド
+## Customization Guide
 
-### 1. サイト情報の変更
-1. WordPress管理画面の「設定」→「一般」へ移動
-2. 「サイトのタイトル」と「キャッチフレーズ」を入力
-3. これらの情報がヘッダーに自動的に反映されます
+### 1. Change Site Information
+1. Go to "Settings" → "General" in WordPress admin
+2. Enter "Site Title" and "Tagline"
+3. This information will be automatically reflected in the header
 
-### 2. ロゴの設定
-1. 「外観」→「カスタマイズ」→「サイト基本情報」へ移動
-2. 「ロゴを選択」ボタンからロゴ画像をアップロード
-3. 推奨サイズ: 400×100px（透過PNG推奨）
+### 2. Set Logo
+1. Go to "Appearance" → "Customize" → "Site Identity"
+2. Upload logo image from "Select Logo" button
+3. Recommended size: 400×100px (transparent PNG recommended)
 
-### 3. メニューの設定
-1. 「外観」→「メニュー」から新しいメニューを作成
-2. メニュー項目を追加（固定ページ、カスタムリンクなど）
-3. メニューの位置を以下から選択：
-   - **プライマリーメニュー** - PC用サイドメニュー
-   - **モバイルメニュー** - モバイル用フッターナビゲーション
-   - **フッターメニュー** - フッター用（任意）
+### 3. Configure Menus
+1. Go to "Appearance" → "Editor"
+2. Select "Template Parts" from the left menu
+3. Edit each menu:
+   - **side-menu** - Desktop side menu and SNS buttons
+   - **footer** - Footer menu (optional)
+   - **mobile-nav** - Mobile footer navigation
+4. Click on navigation blocks to add/edit menu items
+5. Save your changes
 
-### 4. プロフィールカードのカスタマイズ
-1. 「外観」→「Mobikiテーマ設定」へ移動
-2. プロフィール情報（名前、職業、自己紹介文、絵文字など）を入力
-3. 保存して完了
-4. 「外観」→「エディター」→「テンプレートパーツ」→「side-profile」を選択
-5. 絵文字、テキスト、ステータスを編集
-6. 保存して完了
+### 4. Customize Profile Card
+1. Go to "Appearance" → "Mobiki Theme Settings"
+2. Enter profile information (name, occupation, bio, emoji, etc.)
+3. Save
+4. Go to "Appearance" → "Editor" → "Template Parts" → "side-profile"
+5. Edit emoji, text, and status
+6. Save
 
-### 5. SNSボタンのカスタマイズ
-1. 「外観」→「エディター」→「テンプレートパーツ」→「side-menu」を選択
-2. SNSボタンのリンク先URLを変更
-3. 使用しないSNSボタンは削除可能
+### 5. Customize SNS Buttons
+1. Go to "Appearance" → "Editor" → "Template Parts" → "side-menu"
+2. Change SNS button link URLs
+3. Remove unused SNS buttons if needed
 
-### 6. カラーテーマの変更
-`theme.json`ファイルを編集することで、サイト全体のカラーパレットを変更できます：
+### 6. Change Color Theme
+You can change the site-wide color palette by editing the `theme.json` file:
 
 ```json
 {
@@ -127,8 +134,8 @@ mobiki/
       "palette": [
         {
           "slug": "primary",
-          "color": "#あなたの色",
-          "name": "プライマリー"
+          "color": "#your-color",
+          "name": "Primary"
         }
       ]
     }
@@ -136,36 +143,36 @@ mobiki/
 }
 ```
 
-### 7. コンテンツの作成
-#### トップページの編集
-1. 「外観」→「エディター」→「テンプレート」→「index」を選択
-2. 各セクションを編集：
-   - **Hero** - メインビジュアルとキャッチコピー
-   - **About** - 自己紹介
-   - **Work** - 制作実績（投稿タイプ: portfolio）
-   - **Blog** - ブログ記事（投稿タイプ: post）
-   - **Service** - 提供サービス
-   - **Contact** - お問い合わせ情報
+### 7. Create Content
+#### Edit Homepage
+1. Go to "Appearance" → "Editor" → "Templates" → "index"
+2. Edit each section:
+   - **Hero** - Main visual and catchphrase
+   - **About** - Self-introduction
+   - **Work** - Portfolio (post type: portfolio)
+   - **Blog** - Blog posts (post type: post)
+   - **Service** - Services offered
+   - **Contact** - Contact information
 
-#### ブログ投稿の作成
-1. 「投稿」→「新規追加」
-2. タイトルと本文を入力
-3. アイキャッチ画像を設定（推奨サイズ: 1200×630px）
-4. カテゴリーとタグを設定
-5. 公開
+#### Create Blog Posts
+1. Go to "Posts" → "Add New"
+2. Enter title and content
+3. Set featured image (recommended size: 1200×630px)
+4. Set categories and tags
+5. Publish
 
-#### 固定ページの作成
-1. 「固定ページ」→「新規追加」
-2. タイトルと本文を入力
-3. 必要に応じてアイキャッチ画像を設定
-4. 公開
+#### Create Pages
+1. Go to "Pages" → "Add New"
+2. Enter title and content
+3. Set featured image if needed
+4. Publish
 
-### 8. 背景動画の追加（オプション）
-背景に動画を追加したい場合：
+### 8. Add Background Video (Optional)
+To add a background video:
 
-1. 動画ファイル（MP4形式推奨）を用意
-2. 動画を`wp-content/uploads/`フォルダにアップロード
-3. 以下のコードをtemplates/front-page.htmlのlayout-wrapperクラスの前に追加：
+1. Prepare video file (MP4 format recommended)
+2. Upload video to `wp-content/uploads/` folder
+3. Add the following code before the layout-wrapper class in templates/front-page.html:
 
 ```html
 <!-- wp:html -->
@@ -177,113 +184,118 @@ mobiki/
 <!-- /wp:html -->
 ```
 
-## 技術仕様
+## Technical Specifications
 
-### 対応WordPress バージョン
-- WordPress 6.6以降
-- PHP 8.1以降
+### WordPress Version Support
+- WordPress 6.6 or later
+- PHP 8.1 or later
 
-### 対応ブラウザ
-- Chrome（最新版）
-- Firefox（最新版）
-- Safari（最新版）
-- Edge（最新版）
-- モバイルブラウザ（iOS Safari、Chrome for Android）
+### Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome for Android)
 
-### パフォーマンス
-- CSS: 1ファイル（main.css）
-- JavaScript: 1ファイル（main.js）
-- 外部ライブラリ: なし（Pure JS使用）
-- ページサイズ: 最小限に最適化
+### Performance
+- CSS: 1 file (main.css)
+- JavaScript: 1 file (main.js)
+- External libraries: None (Pure JS)
+- Page size: Minimized and optimized
 
-## トラブルシューティング
+## Troubleshooting
 
-### スタイルが反映されない場合
-1. ブラウザのキャッシュをクリア
-2. WordPressの管理画面で「外観」→「カスタマイズ」を開いて保存
-3. キャッシュプラグインを使用している場合はキャッシュをクリア
+### Styles Not Applied
+1. Clear browser cache
+2. Open "Appearance" → "Customize" in WordPress admin and save
+3. Clear cache if using a cache plugin
 
-### メニューが表示されない場合
-1. 「外観」→「メニュー」でメニューが作成されているか確認
-2. メニューの位置が正しく設定されているか確認
-3. テーマを再度有効化してみる
+### Menu Not Displaying
+1. Check if menu is created in "Appearance" → "Menus"
+2. Verify menu location is set correctly
+3. Try reactivating the theme
 
-### モバイルでレイアウトが崩れる場合
-1. ブラウザのキャッシュをクリア
-2. viewport設定が正しいか確認
-3. CSSファイルが正しく読み込まれているか確認
+### Mobile Layout Issues
+1. Clear browser cache
+2. Check viewport settings
+3. Verify CSS file is loading correctly
 
-## よくある質問（FAQ）
+## FAQ
 
-**Q: このテーマは無料ですか？**
-A: はい、GPL v3ライセンスの下で無料で使用できます。
+**Q: Is this theme free?**
+A: Yes, it's free to use under GPL v3 license.
 
-**Q: 商用利用は可能ですか？**
-A: はい、商用サイトでも自由に使用できます。
+**Q: Can I use it for commercial purposes?**
+A: Yes, you can use it freely for commercial sites.
 
-**Q: カスタマイズのサポートはありますか？**
-A: 基本的なカスタマイズ方法はこのREADMEに記載されています。
+**Q: Is customization support available?**
+A: Basic customization methods are described in this README.
 
-**Q: 複数のサイトで使用できますか？**
-A: はい、制限なく使用できます。
+**Q: Can I use it on multiple sites?**
+A: Yes, you can use it without restrictions.
 
-**Q: 子テーマは必要ですか？**
-A: ブロックテーマのため、多くのカスタマイズはエディター内で完結します。大規模なカスタマイズを行う場合は子テーマの作成を推奨します。
+**Q: Do I need a child theme?**
+A: As a block theme, many customizations can be done within the editor. A child theme is recommended for extensive customizations.
 
-## 今後の予定
+## Roadmap
 
-- [ ] より多くのブロックパターンの追加
-- [ ] カラースキームのプリセット追加
-- [ ] 追加のテンプレート（アーカイブ、404など）
-- [ ] より詳細なドキュメント
+- [ ] Add more block patterns
+- [ ] Add color scheme presets
+- [ ] Additional templates (archive, 404, etc.)
+- [ ] More detailed documentation
 
-## 貢献
+## Contributing
 
-バグ報告や機能リクエストは歓迎します。
+Bug reports and feature requests are welcome.
 
-## ライセンス
+## License
 
-このテーマはGPL v3 or later でライセンスされています。
-詳細は [LICENSE](http://www.gnu.org/licenses/gpl-3.0.html) をご覧ください。
+This theme is licensed under GPL v3 or later.
+See [LICENSE](http://www.gnu.org/licenses/gpl-3.0.html) for details.
 
-## クレジット
+## Credits
 
-- デザイン: 北欧風デザインシステム
-- フォント: システムフォント
-- アイコン: 絵文字
+- Design: Nordic design system
+- Fonts: System fonts
+- Icons: Emoji
 
-## 作者
+## Author
 
 Miroku
 Website: https://profiles.wordpress.org/369work/
 
-## 著作権情報
+## Copyright
+
 Copyright 2025 369work. All rights reserved.
 
-## バージョン
+## Version
 
 1.1
 
-## 更新履歴
+## Changelog
 
 ### 1.0.0 (2025-10-30)
-- 🎉 初回リリース
-- ✨ モバイルファースト設計
-- 🎨 北欧風カラーパレット実装
-- ♿ アクセシビリティ対応
-- 📱 レスポンシブデザイン完成
-- 🖥️ PC用サイドメニュー・プロフィールカード追加
-- ✨ スムーズスクロールアニメーション実装
-- 🎯 ブロックエディター完全対応
+- 🎉 Initial release
+- ✨ Mobile-first design
+- 🎨 Nordic color palette implementation
+- ♿ Accessibility support
+- 📱 Responsive design completion
+- 🖥️ Desktop side menu and profile card added
+- ✨ Smooth scroll animation implementation
+- 🎯 Full block editor support
 
 ### 1.0.1 (2025-11-06)
-- 🎨 スタイルとページナビゲーションの変更
----
+- 🎨 Style and page navigation changes
 
 ### 1.1 (2025-11-14)
-- ✨ サイドメニューのパターン化
-- 🎨 バグ修正
-- 🎨 スタイルの微調整
+- ✨ Side menu pattern implementation
+- 🎨 Bug fixes
+- 🎨 Style refinements
 
+### 1.2 (2025-11-23)
+- 📁 README translation
+- 🎨 Screenshot changed
 
-**Mobiki**をお選びいただき、ありがとうございます！ 🎉
+---
+
+**Thank you for choosing Mobiki!** 🎉

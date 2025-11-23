@@ -1,0 +1,355 @@
+# Copyright (C) 2025 Miroku
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Mobiki 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mobiki\n"
+"POT-Creation-Date: 2025-11-01 00:00:00+00:00\n"
+"PO-Revision-Date: 2025-11-23 14:36+0900\n"
+"Last-Translator: 369work\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#: functions.php:130
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: functions.php:131
+msgid "Mobile Menu"
+msgstr "Mobile Menu"
+
+#: functions.php:132
+msgid "Footer Menu"
+msgstr "Footer Menu"
+
+#: functions.php:143
+msgid "Hero Section"
+msgstr "Hero Section"
+
+#: functions.php:147
+msgid "Sections"
+msgstr "Sections"
+
+#: inc/admin-theme-settings.php:9 inc/admin-theme-settings.php:63
+msgid "Mobiki Theme Settings"
+msgstr "Mobiki Theme Settings"
+
+#: inc/admin-theme-settings.php:10
+msgid "Mobiki Settings"
+msgstr "Mobiki Settings"
+
+#: inc/admin-theme-settings.php:53
+msgid "Settings saved."
+msgstr "Settings saved."
+
+#: inc/admin-theme-settings.php:64
+msgid "Configure the settings for the Mobiki theme."
+msgstr "Configure the settings for the Mobiki theme."
+
+#: inc/admin-theme-settings.php:65
+msgid ""
+"You will register the phone number, email address, and icon to be used in "
+"the theme profile."
+msgstr ""
+"You will register the phone number, email address, and icon to be used in "
+"the theme profile."
+
+#: inc/admin-theme-settings.php:70
+msgid "Phone Number"
+msgstr "Phone Number"
+
+#: inc/admin-theme-settings.php:76
+msgid "Contact Email"
+msgstr "Contact Email"
+
+#: inc/admin-theme-settings.php:83
+msgid "Profile Description"
+msgstr "Profile Description"
+
+#: inc/admin-theme-settings.php:89
+msgid "Enter a description for your profile."
+msgstr "Enter a description for your profile."
+
+#: inc/admin-theme-settings.php:94
+msgid "Profile Image"
+msgstr "Profile Image"
+
+#: inc/admin-theme-settings.php:100
+msgid "Select Image"
+msgstr "Select Image"
+
+#: inc/admin-theme-settings.php:101
+msgid "Remove Image"
+msgstr "Remove Image"
+
+#: inc/admin-theme-settings.php:117
+msgid "Select Profile Image"
+msgstr "Select Profile Image"
+
+#: inc/admin-theme-settings.php:118
+msgid "Use this image"
+msgstr "Use this image"
+
+#: inc/admin-theme-settings.php:141
+msgid "Save Settings"
+msgstr "Save Settings"
+
+#: patterns/404.php:16
+msgid "ERROR 404"
+msgstr "ERROR 404"
+
+#: patterns/404.php:20
+msgid "Page not found."
+msgstr "Page not found."
+
+#: patterns/404.php:24
+msgid ""
+"The page you are looking for might have been removed, had its name changed, "
+"or is temporarily unavailable."
+msgstr ""
+"The page you are looking for might have been removed, had its name changed, "
+"or is temporarily unavailable."
+
+#: patterns/404.php:36
+msgid "Please use the links below to find the page you are looking for:"
+msgstr "Please use the links below to find the page you are looking for:"
+
+#: patterns/404.php:42
+msgid "Back to Top"
+msgstr "Back to Top"
+
+#: patterns/404.php:59
+msgid "Recent Posts"
+msgstr "Recent Posts"
+
+#: patterns/about-section.php:16
+msgid "ABOUT ME"
+msgstr "ABOUT ME"
+
+#: patterns/about-section.php:20
+msgid "About me"
+msgstr "About me"
+
+#: patterns/about-section.php:24
+msgid ""
+"Through design, we create experiences that resonate with people's hearts."
+msgstr ""
+"Through design, we create experiences that resonate with people's hearts."
+
+#: patterns/about-section.php:36
+msgid "Hello. I am a web designer based in Tokyo."
+msgstr "Hello. I am a web designer based in Tokyo."
+
+#: patterns/about-section.php:40
+msgid ""
+"I prioritize user experience and strive for designs that balance beauty and "
+"functionality. With a mobile-first approach, I aim to deliver the best "
+"experience across all devices."
+msgstr ""
+"I prioritize user experience and strive for designs that balance beauty and "
+"functionality. With a mobile-first approach, I aim to deliver the best "
+"experience across all devices."
+
+#: patterns/about-section.php:44
+msgid ""
+"Design is not just about aesthetics; it is about enriching people's lives."
+msgstr ""
+"Design is not just about aesthetics; it is about enriching people's lives."
+
+#: patterns/blog-section.php:14 patterns/mobile-footer-nav.php:26
+#: patterns/mobile-footer-nav.php:27
+msgid "BLOG"
+msgstr "BLOG"
+
+#: patterns/blog-section.php:18
+msgid "Blog"
+msgstr "Blog"
+
+#: patterns/blog-section.php:22
+msgid "We share our thoughts and the latest information on design."
+msgstr "We share our thoughts and the latest information on design."
+
+#: patterns/breadcrumb.php:15
+msgid "Home"
+msgstr "Home"
+
+#: patterns/comments.php:16
+msgid "Comments"
+msgstr "Comments"
+
+#: patterns/contact-section.php:19
+msgid "CONTACT"
+msgstr "CONTACT"
+
+#: patterns/contact-section.php:23
+msgid "CONTACT US"
+msgstr "CONTACT US"
+
+#: patterns/contact-section.php:27
+msgid ""
+"Please feel free to contact us with any questions or inquiries regarding "
+"your project."
+msgstr ""
+"Please feel free to contact us with any questions or inquiries regarding "
+"your project."
+
+#: patterns/contact-section.php:37
+msgid "CONTACT US BY EMAIL"
+msgstr "CONTACT US BY EMAIL"
+
+#: patterns/contact-section.php:41
+msgid "CONTACT US BY PHONE"
+msgstr "CONTACT US BY PHONE"
+
+#: patterns/footer-content.php:17
+msgid " All Rights Reserved."
+msgstr " All Rights Reserved."
+
+#: patterns/hero-section.php:24
+msgid "Creative"
+msgstr "Creative"
+
+#: patterns/hero-section.php:24
+msgid "Designer"
+msgstr "Designer"
+
+#: patterns/hero-section.php:28
+msgid "With designs that resonate with the heart"
+msgstr "With designs that resonate with the heart"
+
+#: patterns/hero-section.php:28
+msgid "Bring your vision to life."
+msgstr "Bring your vision to life."
+
+#: patterns/mobile-footer-nav.php:14 patterns/mobile-footer-nav.php:15
+msgid "ABOUT"
+msgstr "ABOUT"
+
+#: patterns/mobile-footer-nav.php:18 patterns/mobile-footer-nav.php:19
+msgid "WORK"
+msgstr "WORK"
+
+#: patterns/mobile-footer-nav.php:30 patterns/mobile-footer-nav.php:31
+#: patterns/service-section.php:15
+msgid "SERVICE"
+msgstr "SERVICE"
+
+#: patterns/mobile-profile.php:23 patterns/profile.php:23
+msgid "Web Designer &amp; Developer"
+msgstr "Web Designer &amp; Developer"
+
+#: patterns/mobile-profile.php:24 patterns/profile.php:24
+msgid "With creative design,"
+msgstr "With creative design,"
+
+#: patterns/mobile-profile.php:25 patterns/profile.php:25
+msgid "I aim to provide the best user experience."
+msgstr "I aim to provide the best user experience."
+
+#: patterns/mobile-profile.php:31 patterns/profile.php:31
+msgid "Available for work"
+msgstr "Available for work"
+
+#: patterns/service-section.php:19
+msgid "Services provided"
+msgstr "Services provided"
+
+#: patterns/service-section.php:23
+msgid ""
+"Services offered: We provide optimal solutions tailored to our customers' "
+"needs."
+msgstr ""
+"Services offered: We provide optimal solutions tailored to our customers' "
+"needs."
+
+#: patterns/service-section.php:33
+msgid "WEB Design"
+msgstr "WEB Design"
+
+#: patterns/service-section.php:34
+msgid ""
+"We design beautiful and functional websites that prioritize the user "
+"experience."
+msgstr ""
+"We design beautiful and functional websites that prioritize the user "
+"experience."
+
+#: patterns/service-section.php:38
+msgid "UI/UX Design"
+msgstr "UI/UX Design"
+
+#: patterns/service-section.php:39
+msgid "We provide interface design that balances usability and aesthetics."
+msgstr "We provide interface design that balances usability and aesthetics."
+
+#: patterns/service-section.php:43
+msgid "Branding"
+msgstr "Branding"
+
+#: patterns/service-section.php:44
+msgid "We support branding that maximizes the value of companies and services."
+msgstr ""
+"We support branding that maximizes the value of companies and services."
+
+#: patterns/service-section.php:48
+msgid "Front-end Development"
+msgstr "Front-end Development"
+
+#: patterns/service-section.php:49
+msgid ""
+"We provide high-quality front-end development using modern technologies."
+msgstr ""
+"We provide high-quality front-end development using modern technologies."
+
+#: patterns/work-section.php:15
+msgid "WORKS"
+msgstr "WORKS"
+
+#: patterns/work-section.php:19
+msgid "Project History"
+msgstr "Project History"
+
+#: patterns/work-section.php:23
+msgid "A showcase of some of the projects we have worked on."
+msgstr "A showcase of some of the projects we have worked on."
+
+#: patterns/work-section.php:38
+msgid "Branding site production"
+msgstr "Branding site production"
+
+#: patterns/work-section.php:42
+msgid ""
+"We created a website to establish the brand identity of a startup company. "
+"With a modern design and intuitive UI, we maximized the appeal of the brand."
+msgstr ""
+"We created a website to establish the brand identity of a startup company. "
+"With a modern design and intuitive UI, we maximized the appeal of the brand."
+
+#: patterns/work-section.php:57
+msgid "Mobile App UI Design"
+msgstr "Mobile App UI Design"
+
+#: patterns/work-section.php:61
+msgid ""
+"We were responsible for the UI/UX design of an e-commerce application. "
+"Focusing on usability, we designed a seamless flow to purchase."
+msgstr ""
+"We were responsible for the UI/UX design of an e-commerce application. "
+"Focusing on usability, we designed a seamless flow to purchase."
+
+#: patterns/work-section.php:76
+msgid "Portfolio Site"
+msgstr "Portfolio Site"
+
+#: patterns/work-section.php:79
+msgid ""
+"We designed a portfolio site for creators. The structure focuses on visuals "
+"to maximize the appeal of the works."
+msgstr ""
+"We designed a portfolio site for creators. The structure focuses on visuals "
+"to maximize the appeal of the works."
