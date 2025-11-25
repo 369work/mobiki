@@ -7,8 +7,7 @@
  * Description: Contact Section
  */
 
-$admin_email =  get_theme_mod('mobiki_contact_email', get_option('admin_email'));
-$phone_number = get_theme_mod('mobiki_phone_number', '123-456-7890');
+$admin_email = get_option('admin_email');
 ?>
 
 <!-- wp:group {"tagName":"section","layout":{"type":"constrained","contentSize":"100%"}} -->
@@ -45,7 +44,7 @@ $phone_number = get_theme_mod('mobiki_phone_number', '123-456-7890');
         <!-- /wp:paragraph -->
         <!-- wp:paragraph  -->
         <p>
-            <a href="tel:<?php echo esc_attr($phone_number); ?>" class="contact-btn contact-btn-phone">
+            <a href="#" class="contact-btn contact-btn-phone">
                 <span class="contact-icon" role="img" aria-label="<?php esc_attr_e('Phone Icon', 'mobiki'); ?>">📞</span>
                 <span><?php esc_html_e('CONTACT US BY PHONE', 'mobiki'); ?></span>
             </a>

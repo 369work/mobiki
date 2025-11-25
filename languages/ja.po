@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mobiki\n"
-"POT-Creation-Date: 2025-11-14 12:41+0900\n"
-"PO-Revision-Date: 2025-11-14 12:42+0900\n"
+"POT-Creation-Date: 2025-11-25 17:35+0900\n"
+"PO-Revision-Date: 2025-11-25 17:36+0900\n"
 "Last-Translator: 369work\n"
 "Language-Team: 369work\n"
 "Language: ja\n"
@@ -21,70 +21,6 @@ msgstr "ヒーローセクション"
 #: functions.php:142
 msgid "Sections"
 msgstr "セクション"
-
-#: inc/admin-theme-settings.php:9 inc/admin-theme-settings.php:83
-msgid "Mobiki Theme Settings"
-msgstr "Mobikiテーマ設定"
-
-#: inc/admin-theme-settings.php:10
-msgid "Mobiki Settings"
-msgstr "Mobiki設定"
-
-#: inc/admin-theme-settings.php:34
-msgid "Select Profile Image"
-msgstr "プロフィール画像を選択"
-
-#: inc/admin-theme-settings.php:35
-msgid "Use this image"
-msgstr "この画像を使用する"
-
-#: inc/admin-theme-settings.php:47
-msgid "You do not have sufficient permissions to access this page."
-msgstr "このページにアクセスするための十分な権限がありません。"
-
-#: inc/admin-theme-settings.php:73
-msgid "Settings saved."
-msgstr "設定の保存をしました。"
-
-#: inc/admin-theme-settings.php:84
-msgid "Configure the settings for the Mobiki theme."
-msgstr "Mobiki テーマの設定を構成します。"
-
-#: inc/admin-theme-settings.php:85
-msgid ""
-"You will register the phone number, email address, and icon to be used in "
-"the theme profile."
-msgstr ""
-"テーマのプロフィールで使用する電話番号、メールアドレス、アイコンを登録しま"
-"す。"
-
-#: inc/admin-theme-settings.php:90
-msgid "Phone Number"
-msgstr "電話番号"
-
-#: inc/admin-theme-settings.php:96
-msgid "Contact Email"
-msgstr "問い合わせ用のメールアドレス"
-
-#: inc/admin-theme-settings.php:103
-msgid "Profile Description"
-msgstr "プロフィールの説明文"
-
-#: inc/admin-theme-settings.php:109
-msgid "Enter a description for your profile."
-msgstr "プロフィールの説明を入力します。"
-
-#: inc/admin-theme-settings.php:114
-msgid "Profile Image"
-msgstr "プロフィール用の画像"
-
-#: inc/admin-theme-settings.php:120
-msgid "Select Image"
-msgstr "画像を選択"
-
-#: inc/admin-theme-settings.php:121
-msgid "Remove Image"
-msgstr "画像を削除"
 
 #: patterns/404.php:19
 msgid "ERROR 404"
@@ -114,24 +50,24 @@ msgstr "Topに戻る"
 msgid "Recent Posts"
 msgstr "最近の投稿"
 
-#: patterns/about-section.php:19
+#: patterns/about-section.php:18
 msgid "ABOUT ME"
 msgstr "ABOUT ME"
 
-#: patterns/about-section.php:25
+#: patterns/about-section.php:24
 msgid "About me"
 msgstr "私について"
 
-#: patterns/about-section.php:29
+#: patterns/about-section.php:28
 msgid ""
 "Through design, we create experiences that resonate with people's hearts."
 msgstr "私たちはデザインを通して、人々の心に響く体験を創造します。"
 
-#: patterns/about-section.php:47
+#: patterns/about-section.php:42
 msgid "Hello. I am a web designer based in Tokyo."
 msgstr "こんにちは。私は東京を拠点に活動するウェブデザイナーです。"
 
-#: patterns/about-section.php:51
+#: patterns/about-section.php:46
 msgid ""
 "I prioritize user experience and strive for designs that balance beauty and "
 "functionality. With a mobile-first approach, I aim to deliver the best "
@@ -141,7 +77,7 @@ msgstr ""
 "す。モバイルファーストの考え方を基本に、すべてのデバイスで最高の体験を提供す"
 "ることを目指しています。"
 
-#: patterns/about-section.php:55
+#: patterns/about-section.php:50
 msgid ""
 "Design is not just about aesthetics; it is about enriching people's lives."
 msgstr ""
@@ -177,15 +113,15 @@ msgstr "Home"
 msgid "Comments"
 msgstr "コメント"
 
-#: patterns/contact-section.php:22 patterns/mobile-footer-nav.php:24
+#: patterns/contact-section.php:21 patterns/mobile-footer-nav.php:24
 msgid "CONTACT"
 msgstr "CONTACT"
 
-#: patterns/contact-section.php:28
+#: patterns/contact-section.php:27
 msgid "Contact US"
 msgstr "お問い合わせ"
 
-#: patterns/contact-section.php:32
+#: patterns/contact-section.php:31
 msgid ""
 "Please feel free to contact us with any questions or inquiries regarding "
 "your project."
@@ -193,11 +129,11 @@ msgstr ""
 "プロジェクトに関するご質問やお問い合わせがございましたら、お気軽にお問い合わ"
 "せください。"
 
-#: patterns/contact-section.php:42
+#: patterns/contact-section.php:41
 msgid "CONTACT US BY EMAIL"
 msgstr "メールでのお問い合わせ"
 
-#: patterns/contact-section.php:50
+#: patterns/contact-section.php:49
 msgid "CONTACT US BY PHONE"
 msgstr "電話でのお問い合わせ"
 
@@ -257,19 +193,19 @@ msgstr "WORK"
 msgid "SERVICE"
 msgstr "SERVICE"
 
-#: patterns/mobile-profile.php:23 patterns/profile.php:23
+#: patterns/mobile-profile.php:19 patterns/profile.php:19
 msgid "Web Designer & Developer"
 msgstr "Webデザイナー＆開発"
 
-#: patterns/mobile-profile.php:24 patterns/profile.php:24
+#: patterns/mobile-profile.php:20 patterns/profile.php:20
 msgid "With creative design and development skills,"
 msgstr "クリエイティブなデザインと開発スキルで、"
 
-#: patterns/mobile-profile.php:25 patterns/profile.php:25
+#: patterns/mobile-profile.php:21 patterns/profile.php:21
 msgid "I aim to provide the best user experience."
 msgstr "最高のユーザーエクスペリエンスを提供することを目指しています。"
 
-#: patterns/mobile-profile.php:31 patterns/profile.php:31
+#: patterns/mobile-profile.php:26 patterns/profile.php:26
 msgid "Available for work"
 msgstr "いつでも受注可能"
 
@@ -373,3 +309,52 @@ msgid ""
 msgstr ""
 "クリエイター向けのポートフォリオサイトをデザイン。作品の魅力を最大限に伝える"
 "ビジュアル重視の構成を実現しました。"
+
+#~ msgid "Mobiki Theme Settings"
+#~ msgstr "Mobikiテーマ設定"
+
+#~ msgid "Mobiki Settings"
+#~ msgstr "Mobiki設定"
+
+#~ msgid "Select Profile Image"
+#~ msgstr "プロフィール画像を選択"
+
+#~ msgid "Use this image"
+#~ msgstr "この画像を使用する"
+
+#~ msgid "You do not have sufficient permissions to access this page."
+#~ msgstr "このページにアクセスするための十分な権限がありません。"
+
+#~ msgid "Settings saved."
+#~ msgstr "設定の保存をしました。"
+
+#~ msgid "Configure the settings for the Mobiki theme."
+#~ msgstr "Mobiki テーマの設定を構成します。"
+
+#~ msgid ""
+#~ "You will register the phone number, email address, and icon to be used in "
+#~ "the theme profile."
+#~ msgstr ""
+#~ "テーマのプロフィールで使用する電話番号、メールアドレス、アイコンを登録しま"
+#~ "す。"
+
+#~ msgid "Phone Number"
+#~ msgstr "電話番号"
+
+#~ msgid "Contact Email"
+#~ msgstr "問い合わせ用のメールアドレス"
+
+#~ msgid "Profile Description"
+#~ msgstr "プロフィールの説明文"
+
+#~ msgid "Enter a description for your profile."
+#~ msgstr "プロフィールの説明を入力します。"
+
+#~ msgid "Profile Image"
+#~ msgstr "プロフィール用の画像"
+
+#~ msgid "Select Image"
+#~ msgstr "画像を選択"
+
+#~ msgid "Remove Image"
+#~ msgstr "画像を削除"

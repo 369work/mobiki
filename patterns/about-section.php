@@ -1,12 +1,11 @@
 <?php
+
 /**
  * Title: About Section
  * Slug: mobiki/about-section
  * Categories: mobiki-sections
  * Description: An about me section pattern for Mobiki theme.
  */
-
-$profile_image = get_theme_mod('mobiki_profile_image', '');
 ?>
 
 <!-- wp:group {"tagName":"section","layout":{"type":"constrained","contentSize":"100%"}} -->
@@ -35,11 +34,7 @@ $profile_image = get_theme_mod('mobiki_profile_image', '');
     <div class="wp-block-group about-content">
         <!-- wp:paragraph {"className":"about-image"} -->
         <p class="about-image">
-            <?php if (!empty($profile_image)) : ?>
-                <img src="<?php echo esc_url($profile_image); ?>" alt="<?php esc_attr_e('Profile image', 'mobiki'); ?>">
-            <?php else : ?>
-                👤
-            <?php endif; ?>
+            👤
         </p>
         <!-- /wp:paragraph -->
 

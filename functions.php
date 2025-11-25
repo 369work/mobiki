@@ -163,6 +163,3 @@ function mobiki_theme_excerpt_more($more)
 }
 add_filter('excerpt_more', 'mobiki_theme_excerpt_more');
 
-
-// 管理画面の外観の中にテーマのオリジナル設定ページを作る
-require get_template_directory() . '/inc/admin-theme-settings.php';

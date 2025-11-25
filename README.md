@@ -2,17 +2,17 @@
 
 A mobile-first portfolio theme with Nordic design aesthetics.
 
-**Languages / 言語:** [English](#english) | [日本語](README.ja.md)
+**Languages / 言語:** [English](README.md) | [日本語](README.ja.md)
 
 ---
 
 ## Features
 
-- 📱 **Mobile-First Design** - Optimized for smartphone viewing
+- 📱 **Mobile-First Design** - Designed with smartphone viewing as top priority
 - 🎨 **Nordic Color Palette** - Sophisticated and calming color scheme
-- ♿ **Accessibility Ready** - Designed with all users in mind
-- ✨ **Beautiful Animations** - Smooth scrolling and fade-in effects
-- 🎯 **Full Block Editor Support** - Compatible with WordPress 6.0+ Full Site Editing
+- ♿ **Accessibility Ready** - Designed with consideration for all users
+- ✨ **Beautiful Animation Effects** - Smooth scrolling and fade-in
+- 🎯 **Full Block Editor Support** - Compatible with WordPress 6.0+ Full Site Editing features
 - 📐 **Responsive Design** - Beautiful display on all devices
 - 🖥️ **Desktop Side Menu** - Fixed navigation menu on the left for desktop
 - 👤 **Profile Card** - Profile display on the right for desktop
@@ -60,7 +60,7 @@ A mobile-first portfolio theme with Nordic design aesthetics.
 3. Search for "Mobiki" in the search form.
 4. Click "Install".
 5. Click "Activate".
-6. Navigate to the Mobiki theme settings menu in the admin dashboard.
+
 
 ## Theme Structure
 
@@ -80,6 +80,7 @@ mobiki/
 │   ├── footer.html         # Footer
 │   ├── side-menu.html      # Desktop side menu
 │   ├── side-profile.html   # Desktop profile card (right side)
+│   ├── mobile-profile.html # Mobile profile card
 │   └── mobile-nav.html     # Mobile footer navigation
 ├── assets/                  # Asset files
 │   ├── css/
@@ -96,28 +97,34 @@ mobiki/
 2. Enter "Site Title" and "Tagline"
 3. This information will be automatically reflected in the header
 
-### 2. Set Logo
-1. Go to "Appearance" → "Customize" → "Site Identity"
-2. Upload logo image from "Select Logo" button
-3. Recommended size: 400×100px (transparent PNG recommended)
+### 2. Design Settings
+1. Go to "Appearance" → "Editor"
+2. Click on each item in "Design" to change settings
+   - **Navigation**: Review and edit configured menus
+   - **Styles**: Change main colors
+   - **Templates**: Change layout of each page
+3. For blocks labeled "Custom HTML" in the editor screen, it's more convenient to switch to the code editor for editing. You can also delete them to match your design.
 
 ### 3. Configure Menus
 1. Go to "Appearance" → "Editor"
-2. Select "Template Parts" from the left menu
+2. Select "Patterns" → "Template Parts" from the left menu
 3. Edit each menu:
    - **side-menu** - Desktop side menu and SNS buttons
-   - **footer** - Footer menu (optional)
-   - **mobile-nav** - Mobile footer navigation
-4. Click on navigation blocks to add/edit menu items
+   Click on navigation blocks to add/edit menu items
+   - **footer** - Footer menu (initially equipped with blog menu in HTML custom code)
+   Can be customized by directly editing HTML code
+   - **mobile-nav** - Mobile footer navigation (equipped with HTML custom code)
+   Can be customized by directly editing HTML code
+4. For blocks labeled "Custom HTML" in the editor screen, it's more convenient to switch to the code editor for editing. You can also delete them to match your design.
 5. Save your changes
 
+
 ### 4. Customize Profile Card
-1. Go to "Appearance" → "Mobiki Theme Settings"
-2. Enter profile information (name, occupation, bio, emoji, etc.)
+1. Go to "Appearance" → "Editor" → "Template Parts" → "side-profile"
+2. Edit emoji, text, and status
 3. Save
-4. Go to "Appearance" → "Editor" → "Template Parts" → "side-profile"
-5. Edit emoji, text, and status
-6. Save
+4. Similarly, you can also edit "mobile-profile"
+
 
 ### 5. Customize SNS Buttons
 1. Go to "Appearance" → "Editor" → "Template Parts" → "side-menu"
@@ -145,7 +152,7 @@ You can change the site-wide color palette by editing the `theme.json` file:
 
 ### 7. Create Content
 #### Edit Homepage
-1. Go to "Appearance" → "Editor" → "Templates" → "index"
+1. Go to "Appearance" → "Editor" → "Templates" → "Front Page"
 2. Edit each section:
    - **Hero** - Main visual and catchphrase
    - **About** - Self-introduction
@@ -211,9 +218,7 @@ To add a background video:
 3. Clear cache if using a cache plugin
 
 ### Menu Not Displaying
-1. Check if menu is created in "Appearance" → "Menus"
-2. Verify menu location is set correctly
-3. Try reactivating the theme
+1. Try activating a different theme and then reactivate this theme
 
 ### Mobile Layout Issues
 1. Clear browser cache
@@ -294,7 +299,11 @@ Copyright 2025 369work. All rights reserved.
 
 ### 1.2 (2025-11-23)
 - 📁 README translation
-- 🎨 Screenshot changed
+- 🎨 Screenshot changed to English version
+
+### 1.3 (2025-11-25)
+- ✨ Side profile changes
+- 🎨 Editor style adjustments
 
 ---
 
