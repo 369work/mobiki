@@ -305,6 +305,10 @@ Copyright 2025 369work. All rights reserved.
 - ✨ Side profile changes
 - 🎨 Editor style adjustments
 
+### 1.4 (2025-12-01)
+- 🎨 Side profile bug fixed
+- 🎨 Changed CSS
+
 ---
 
 **Thank you for choosing Mobiki!** 🎉
