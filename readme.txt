@@ -4,7 +4,7 @@ Author URI: https://profiles.wordpress.org/369work/
 Requires at least: 6.6
 Tested up to: 6.9
 Requires PHP: 8.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, portfolio, one-column, custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready
@@ -184,6 +184,9 @@ Editor style adjustments
 = 1.4 =
 Side profile bug fixed
 Changed CSS
+
+= 1.5 =
+* Compatible with WordPress 7.0
 
 
 == Resources ==

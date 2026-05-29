@@ -273,9 +273,6 @@ Website: https://profiles.wordpress.org/369work/
 
 Copyright 2025 369work. All rights reserved.
 
-## Version
-
-1.1
 
 ## Changelog
 
@@ -308,6 +305,9 @@ Copyright 2025 369work. All rights reserved.
 ### 1.4 (2025-12-01)
 - 🎨 Side profile bug fixed
 - 🎨 Changed CSS
+
+### 1.5 (2026-5-20)
+- ✨ Compatible with WordPress 7.0
 
 ---
 

@@ -309,6 +309,9 @@ Copyright 2025 369work. All rights reserved.
 - 🎨 サイドプロフィールのバグ修正
 - 🎨 CSSを変更
 
+### 1.5 (2026-5-20)
+- ✨ WordPress 7.0 に対応
+
 ---
 
 **Mobikiをお選びいただき、ありがとうございます!** 🎉
