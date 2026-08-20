@@ -2,9 +2,9 @@
 Contributors: 369work
 Author URI: https://profiles.wordpress.org/369work/
 Requires at least: 6.6
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.5
+Stable tag: 1.7
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, portfolio, one-column, custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready
@@ -187,6 +187,16 @@ Changed CSS
 
 = 1.5 =
 * Compatible with WordPress 7.0
+
+= 1.6 =
+* theme.json fixed
+* patterns bug fixed
+
+= 1.7 =
+* Compatible with WordPress 7.1
+* Fixed the three column layout of the template previews in the Site Editor
+* Editor styles are no longer enqueued on the admin screens
+* Fixed invalid block markup in the profile pattern
 
 
 == Resources ==

@@ -309,6 +309,12 @@ Copyright 2025 369work. All rights reserved.
 ### 1.5 (2026-5-20)
 - ✨ Compatible with WordPress 7.0
 
+### 1.7 (2026-8-20)
+- ✨ Compatible with WordPress 7.1
+- 🐛 Fixed the template previews in the Site Editor so they match the front end layout
+- 🐛 Editor styles are no longer enqueued on the admin screens
+- 🐛 Fixed invalid block markup in the profile pattern
+
 ---
 
 **Thank you for choosing Mobiki!** 🎉

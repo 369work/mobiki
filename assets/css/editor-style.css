@@ -88,7 +88,8 @@ body {
     min-height: calc(100vh - 150px);
 }
 
-@media (min-width: 1280px) {
+/* サイトエディターのテンプレート一覧プレビューは 1200px 幅で描画されるため 1024px から横並びにする */
+@media (min-width: 1024px) {
     .layout-wrapper {
         display: flex;
         justify-content: center;
@@ -128,7 +129,7 @@ body {
     box-shadow: 0 8px 24px rgba(45, 52, 54, 0.08);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .side-menu {
         width: 280px;
         flex-shrink: 0;
@@ -425,7 +426,7 @@ body {
     flex-direction: column;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .main-container {
         flex: 1;
         margin: 0;

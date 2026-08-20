@@ -1,165 +1,159 @@
 <?php
 /**
- * mobiki functions and definitions
+ * Mobiki functions and definitions
  *
  * @package mobiki
  */
 
-// Exit if accessed directly
-if (!defined('ABSPATH')) {
-    exit;
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-// Theme Version
-if (!defined('MOBIKI_THEME_VERSION')) {
-    define('MOBIKI_THEME_VERSION', wp_get_theme()->get('Version'));
+// Theme Version.
+if ( ! defined( 'MOBIKI_THEME_VERSION' ) ) {
+	define( 'MOBIKI_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 }
 
 if ( ! function_exists( 'mobiki_setup' ) ) :
-    /**
-     * テーマのセットアップ
-     */
-    function mobiki_setup() {
-        // 翻訳ファイルの読み込み(6.6 未満に対応)
-        load_theme_textdomain( 'mobiki', get_template_directory() . '/languages' );
+	/**
+	 * Theme setup.
+	 */
+	function mobiki_setup() {
+		// Add editor styles support.
+		add_theme_support( 'editor-styles' );
+		// Pass a theme-relative path so WordPress inlines the file instead of fetching it over HTTP.
+		add_editor_style( 'assets/css/editor-style.css' );
 
-        // エディタースタイルのサポート
-        add_theme_support('editor-styles');
-        add_editor_style(get_parent_theme_file_uri('assets/css/editor-style.css'));
+		// Add block editor support.
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'block-patterns' );
+		add_theme_support( 'block-templates' );
+		add_theme_support( 'block-template-parts' );
 
-        // ブロックエディターのサポート
-        add_theme_support('wp-block-styles');
-        add_theme_support('block-patterns');
-        add_theme_support('block-templates');
-        add_theme_support('block-template-parts');
+		// Add title tag support.
+		add_theme_support( 'title-tag' );
 
-        // タイトルタグのサポート
-        add_theme_support( 'title-tag' );
+		// Add post thumbnails support.
+		add_theme_support( 'post-thumbnails' );
 
-        // アイキャッチ画像のサポート
-        add_theme_support( 'post-thumbnails' );
+		// Add HTML5 support.
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'style',
+				'script',
+			)
+		);
 
-        // HTML5のサポート
-        add_theme_support( 'html5', array(
-            'search-form',
-            'comment-form',
-            'comment-list',
-            'gallery',
-            'caption',
-            'style',
-            'script',
-        ) );
+		// Add post formats support.
+		add_theme_support(
+			'post-formats',
+			array(
+				'aside',
+				'audio',
+				'chat',
+				'gallery',
+				'image',
+				'link',
+				'quote',
+				'status',
+				'video',
+			)
+		);
 
-        // 投稿フォーマットのサポート
-        add_theme_support('post-formats', array(
-            'aside',
-            'audio',
-            'chat',
-            'gallery',
-            'image',
-            'link',
-            'quote',
-            'status',
-            'video'
-        ));
+		// Add custom logo support.
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 100,
+				'width'       => 400,
+				'flex-height' => true,
+				'flex-width'  => true,
+			)
+		);
 
-        // カスタムロゴのサポート
-        add_theme_support( 'custom-logo', array(
-            'height'      => 100,
-            'width'       => 400,
-            'flex-height' => true,
-            'flex-width'  => true,
-        ) );
+		// Add responsive embeds support.
+		add_theme_support( 'responsive-embeds' );
 
-        // レスポンシブ埋め込みのサポート
-        add_theme_support( 'responsive-embeds' );
-
-        // ワイドアラインメントのサポート
-        add_theme_support( 'align-wide' );
-    }
+		// Add wide alignment support.
+		add_theme_support( 'align-wide' );
+	}
 endif;
 add_action( 'after_setup_theme', 'mobiki_setup' );
 
 /**
- * スタイルとスクリプトの読み込み
+ * Enqueue styles and scripts.
  */
 function mobiki_enqueue_scripts() {
-    // CSSの読み込み
-    wp_enqueue_style(
-        'mobiki-style',
-        get_stylesheet_uri(),
-        array(),
-        MOBIKI_THEME_VERSION
-    );
+	// Load the stylesheet.
+	wp_enqueue_style(
+		'mobiki-style',
+		get_stylesheet_uri(),
+		array(),
+		MOBIKI_THEME_VERSION
+	);
 
-    // メインスタイル
-    wp_enqueue_style(
-        'mobiki-original-style',
-        get_template_directory_uri() . '/assets/css/main.css',
-        array('mobiki-style'),
-        MOBIKI_THEME_VERSION
-    );
+	// Main stylesheet.
+	wp_enqueue_style(
+		'mobiki-original-style',
+		get_template_directory_uri() . '/assets/css/main.css',
+		array( 'mobiki-style' ),
+		MOBIKI_THEME_VERSION
+	);
 
-    // メインスクリプト
-    wp_enqueue_script(
-        'mobiki-script',
-        get_template_directory_uri() . '/assets/js/main.js',
-        array(),
-        MOBIKI_THEME_VERSION,
-        true
-    );
+	// Main script.
+	wp_enqueue_script(
+		'mobiki-script',
+		get_template_directory_uri() . '/assets/js/main.js',
+		array(),
+		MOBIKI_THEME_VERSION,
+		true
+	);
 }
 add_action( 'wp_enqueue_scripts', 'mobiki_enqueue_scripts' );
 
 /**
- * エディタ用スタイルの読み込み（ブロックエディタ & フルサイトエディタ両対応）
- */
-function mobiki_enqueue_editor_assets() {
-    // エディタ用スタイルを読み込み
-    if ( ! is_admin() ) {
-        return;
-    }
-
-    wp_enqueue_style(
-        'mobiki-editor-style',
-        get_template_directory_uri() . '/assets/css/editor-style.css',
-        array(),
-        MOBIKI_THEME_VERSION
-    );
-}
-add_action( 'enqueue_block_editor_assets', 'mobiki_enqueue_editor_assets' );
-
-/**
- * ブロックパターンカテゴリーの登録
+ * Register block pattern categories.
  */
 function mobiki_register_block_pattern_categories() {
-    register_block_pattern_category(
-        'mobiki-hero',
-        array( 'label' => __( 'Hero Section', 'mobiki' ) )
-    );
-    register_block_pattern_category(
-        'mobiki-sections',
-        array( 'label' => __( 'Sections', 'mobiki' ) )
-    );
+	register_block_pattern_category(
+		'mobiki-hero',
+		array( 'label' => __( 'Hero Section', 'mobiki' ) )
+	);
+	register_block_pattern_category(
+		'mobiki-sections',
+		array( 'label' => __( 'Sections', 'mobiki' ) )
+	);
 }
 add_action( 'init', 'mobiki_register_block_pattern_categories' );
 
 
 /**
- * 抜粋の長さを調整
+ * Adjust the excerpt length.
+ *
+ * @param int $length Excerpt length.
+ * @return int
  */
-function mobiki_theme_excerpt_length($length)
-{
-    return 60;
+function mobiki_theme_excerpt_length( $length ) {
+	unset( $length );
+	return 60;
 }
-add_filter('excerpt_length', 'mobiki_theme_excerpt_length');
+add_filter( 'excerpt_length', 'mobiki_theme_excerpt_length' );
 
 /**
- * 抜粋の最後の文字を変更
+ * Change the excerpt's trailing string.
+ *
+ * @param string $more String appended to the end of the excerpt.
+ * @return string
  */
-function mobiki_theme_excerpt_more($more)
-{
-    return '...';
+function mobiki_theme_excerpt_more( $more ) {
+	unset( $more );
+	return '...';
 }
-add_filter('excerpt_more', 'mobiki_theme_excerpt_more');
-
+add_filter( 'excerpt_more', 'mobiki_theme_excerpt_more' );
