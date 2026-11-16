@@ -13,21 +13,25 @@
 }
 
 :root {
-    /* 北欧風カラーパレット（アクセシビリティ対応） */
-    --primary-color: #5D7B89;
-    --primary-dark: #4A6270;
-    --primary-light: #7A98A6;
-    --secondary-color: #A8B5A5;
-    --accent-mint: #8ABAD3;
-    --accent-coral: #D98F7E;
-    --accent-mustard: #D9A86C;
-    --accent-sage: #9CAF88;
-    --text-dark: #2D3436;
-    --text-medium: #636E72;
-    --text-light: #95A5A6;
-    --bg-light: #F8F9FA;
-    --bg-warm: #FAF7F5;
-    --border-light: #E8EBE8;
+    /* 北欧風カラーパレット（アクセシビリティ対応）
+       theme.json のプリセットを参照し、スタイルバリエーションの色が
+       このファイル全体に反映されるようにする。
+       フォールバックは既定バリエーションと同じ値なので、
+       プリセットが読めない環境でも表示は変わらない。 */
+    --primary-color: var(--wp--preset--color--primary, #587581);
+    --primary-dark: var(--wp--preset--color--primary-dark, #4A6270);
+    --primary-light: var(--wp--preset--color--primary-light, #7A98A6);
+    --secondary-color: var(--wp--preset--color--secondary, #A8B5A5);
+    --accent-mint: var(--wp--preset--color--accent-mint, #8ABAD3);
+    --accent-coral: var(--wp--preset--color--accent-coral, #D98F7E);
+    --accent-mustard: var(--wp--preset--color--accent-mustard, #D9A86C);
+    --accent-sage: var(--wp--preset--color--accent-sage, #9CAF88);
+    --text-dark: var(--wp--preset--color--text-dark, #2D3436);
+    --text-medium: var(--wp--preset--color--text-medium, #636E72);
+    --text-light: var(--wp--preset--color--text-light, #667475);
+    --bg-light: var(--wp--preset--color--bg-light, #F8F9FA);
+    --bg-warm: var(--wp--preset--color--bg-warm, #FAF7F5);
+    --border-light: var(--wp--preset--color--border-light, #E8EBE8);
 }
 
 body {
@@ -96,6 +100,18 @@ body {
 /* ========================================
    PC用サイドメニュー
 ======================================== */
+
+/* Top edge shared by the side menu and the profile card, so both line up
+   just below the site header. The admin bar (32px at this width) pushes it down.
+   main.js measures the header and replaces this value; these are the fallbacks. */
+:root {
+    --mobiki-side-top: 180px;
+}
+
+.admin-bar {
+    --mobiki-side-top: 212px;
+}
+
 .side-menu {
     display: none;
 }
@@ -104,11 +120,12 @@ body {
     .side-menu {
         position: fixed;
         left: 50%;
-        top: 50%;
-        transform: translate(calc(-50% - 300px - 60px - 140px), -50%);
+        top: var(--mobiki-side-top);
+        transform: translateX(calc(-50% - 300px - 60px - 140px));
         width: 280px;
         height: auto;
-        max-height: 90vh;
+        max-height: calc(100vh - var(--mobiki-side-top) - 24px);
+        overflow-y: auto;
         background: rgba(255, 255, 255, 0.88);
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
@@ -210,8 +227,8 @@ body {
 
     .side-menu .wp-block-navigation li.contact-btn a {
         display: block;
-        background: var(--primary-color);
-        color: white;
+        background: var(--wp--preset--color--button-bg, #587581);
+        color: var(--wp--preset--color--button-text, #fff);
         text-align: center;
         margin-top: 12px;
         box-shadow: 0 4px 12px rgba(93, 123, 137, 0.25);
@@ -226,7 +243,7 @@ body {
     }
 
     .side-menu .wp-block-navigation li.contact-btn a:hover {
-        background: var(--primary-dark);
+        background: var(--wp--preset--color--button-bg-hover, #4A6270);
         padding-left: 18px;
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(93, 123, 137, 0.3);
@@ -304,9 +321,11 @@ body {
         display: block;
         position: fixed;
         right: 50%;
-        top: 50%;
-        transform: translate(calc(50% + 300px + 60px + 140px), -50%);
+        top: var(--mobiki-side-top);
+        transform: translateX(calc(50% + 300px + 60px + 140px));
         width: 280px;
+        max-height: calc(100vh - var(--mobiki-side-top) - 24px);
+        overflow-y: auto;
         background: rgba(255, 255, 255, 0.88);
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
@@ -1103,8 +1122,8 @@ h1.section-title {
     justify-content: center;
     gap: 12px;
     padding: 18px 32px;
-    background: var(--primary-color);
-    color: white;
+    background: var(--wp--preset--color--button-bg, #587581);
+    color: var(--wp--preset--color--button-text, #fff);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -1120,7 +1139,7 @@ h1.section-title {
 }
 
 .contact-buttons .contact-btn:hover {
-    background: var(--primary-dark);
+    background: var(--wp--preset--color--button-bg-hover, #4A6270);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(93, 123, 137, 0.3);
 }
@@ -1474,8 +1493,8 @@ footer {
 }
 
 .footer-search-form .search-submit:hover {
-    background: var(--primary-color);
-    color: #fff;
+    background: var(--wp--preset--color--button-bg, #587581);
+    color: var(--wp--preset--color--button-text, #fff);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
@@ -1820,8 +1839,8 @@ footer {
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
-    color: white;
-    background: var(--accent-mint);
+    color: var(--wp--preset--color--button-text, #fff);
+    background: var(--wp--preset--color--button-bg, #587581);
     border-radius: 24px;
     padding: 4px 16px;
     margin-right: 8px;
@@ -1834,14 +1853,14 @@ footer {
 }
 
 .post-category-badge a {
-    color: white;
+    color: var(--wp--preset--color--button-text, #fff);
     text-decoration: none;
 }
 
 .post-category-badge:hover,
 .post-category-badge:focus {
-    background: var(--primary-color);
-    color: #fff;
+    background: var(--wp--preset--color--button-bg-hover, #4A6270);
+    color: var(--wp--preset--color--button-text, #fff);
     border-color: var(--accent-coral);
     outline: none;
 }

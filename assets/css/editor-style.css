@@ -13,21 +13,23 @@
 }
 
 :root {
-    /* 北欧風カラーパレット（アクセシビリティ対応） */
-    --primary-color: #5D7B89;
-    --primary-dark: #4A6270;
-    --primary-light: #7A98A6;
-    --secondary-color: #A8B5A5;
-    --accent-mint: #8ABAD3;
-    --accent-coral: #D98F7E;
-    --accent-mustard: #D9A86C;
-    --accent-sage: #9CAF88;
-    --text-dark: #2D3436;
-    --text-medium: #636E72;
-    --text-light: #95A5A6;
-    --bg-light: #F8F9FA;
-    --bg-warm: #FAF7F5;
-    --border-light: #E8EBE8;
+    /* 北欧風カラーパレット（アクセシビリティ対応）
+       main.css と同じく theme.json のプリセットを参照する。
+       エディターのプレビューがスタイルバリエーションに追従するため。 */
+    --primary-color: var(--wp--preset--color--primary, #587581);
+    --primary-dark: var(--wp--preset--color--primary-dark, #4A6270);
+    --primary-light: var(--wp--preset--color--primary-light, #7A98A6);
+    --secondary-color: var(--wp--preset--color--secondary, #A8B5A5);
+    --accent-mint: var(--wp--preset--color--accent-mint, #8ABAD3);
+    --accent-coral: var(--wp--preset--color--accent-coral, #D98F7E);
+    --accent-mustard: var(--wp--preset--color--accent-mustard, #D9A86C);
+    --accent-sage: var(--wp--preset--color--accent-sage, #9CAF88);
+    --text-dark: var(--wp--preset--color--text-dark, #2D3436);
+    --text-medium: var(--wp--preset--color--text-medium, #636E72);
+    --text-light: var(--wp--preset--color--text-light, #667475);
+    --bg-light: var(--wp--preset--color--bg-light, #F8F9FA);
+    --bg-warm: var(--wp--preset--color--bg-warm, #FAF7F5);
+    --border-light: var(--wp--preset--color--border-light, #E8EBE8);
 }
 
 body {
@@ -230,8 +232,8 @@ body {
 
     .side-menu .wp-block-navigation li.contact-btn a {
         display: block;
-        background: var(--primary-color);
-        color: white;
+        background: var(--wp--preset--color--button-bg, #587581);
+        color: var(--wp--preset--color--button-text, #fff);
         text-align: center;
         margin-top: 12px;
         box-shadow: 0 4px 12px rgba(93, 123, 137, 0.25);
@@ -246,7 +248,7 @@ body {
     }
 
     .side-menu .wp-block-navigation li.contact-btn a:hover {
-        background: var(--primary-dark);
+        background: var(--wp--preset--color--button-bg-hover, #4A6270);
         padding-left: 18px;
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(93, 123, 137, 0.3);
@@ -1133,8 +1135,8 @@ h1.section-title {
     justify-content: center;
     gap: 12px;
     padding: 18px 32px;
-    background: var(--primary-color);
-    color: white;
+    background: var(--wp--preset--color--button-bg, #587581);
+    color: var(--wp--preset--color--button-text, #fff);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -1150,7 +1152,7 @@ h1.section-title {
 }
 
 .contact-buttons .contact-btn:hover {
-    background: var(--primary-dark);
+    background: var(--wp--preset--color--button-bg-hover, #4A6270);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(93, 123, 137, 0.3);
 }
@@ -1459,8 +1461,8 @@ footer {
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
-    color: white;
-    background: var(--accent-mint);
+    color: var(--wp--preset--color--button-text, #fff);
+    background: var(--wp--preset--color--button-bg, #587581);
     border-radius: 24px;
     padding: 4px 16px;
     margin-right: 8px;
@@ -1473,14 +1475,14 @@ footer {
 }
 
 .post-category-badge a {
-    color: white;
+    color: var(--wp--preset--color--button-text, #fff);
     text-decoration: none;
 }
 
 .post-category-badge:hover,
 .post-category-badge:focus {
-    background: var(--primary-color);
-    color: #fff;
+    background: var(--wp--preset--color--button-bg-hover, #4A6270);
+    color: var(--wp--preset--color--button-text, #fff);
     border-color: var(--accent-coral);
     outline: none;
 }

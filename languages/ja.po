@@ -310,6 +310,70 @@ msgstr ""
 "クリエイター向けのポートフォリオサイトをデザイン。作品の魅力を最大限に伝える"
 "ビジュアル重視の構成を実現しました。"
 
+#: functions.php:168 functions.php:169 functions.php:206
+msgid "About Mobiki"
+msgstr "Mobiki について"
+
+#: functions.php:203
+msgid "(opens in a new tab)"
+msgstr "（新しいタブで開きます）"
+
+#: functions.php:207
+msgid "Mobiki is a mobile-first portfolio block theme for creators and personal blogs. You can edit the templates, patterns and styles from the Site Editor."
+msgstr "Mobiki は、クリエイターのポートフォリオや個人ブログに向けた、モバイルファーストのブロックテーマです。テンプレート・パターン・スタイルは、サイトエディターから編集できます。"
+
+#: functions.php:210
+msgid "Get Started"
+msgstr "はじめに"
+
+#: functions.php:211
+msgid "Open the Site Editor to change the front page, side menu, profile card and colors."
+msgstr "サイトエディターを開くと、トップページ・サイドメニュー・プロフィールカード・配色を変更できます。"
+
+#: functions.php:214
+msgid "Open the Site Editor"
+msgstr "サイトエディターを開く"
+
+#: functions.php:220
+msgid "Review the Mobiki Theme"
+msgstr "Mobiki テーマのレビュー"
+
+#: functions.php:221
+msgid "Thank you for using the Mobiki theme! We would love to hear your feedback. Please take a moment to leave a review."
+msgstr "Mobiki テーマをご利用いただきありがとうございます！ご意見をお聞かせください。よろしければレビューをお願いします。"
+
+#: functions.php:224
+msgid "Leave a Review"
+msgstr "レビューする"
+
+#: functions.php:231
+msgid "Theme Support"
+msgstr "テーマのサポート"
+
+#: functions.php:232
+msgid "Free support for the Mobiki theme is provided on the WordPress.org support forum."
+msgstr "Mobiki テーマの無料サポートは、WordPress.org のサポートフォーラムで行っています。"
+
+#: functions.php:235
+msgid "Support Forum"
+msgstr "サポートフォーラム"
+
+#: functions.php:239
+msgid "Paid customization and paid email support are also available. For details, please contact 369Theme."
+msgstr "有料のカスタマイズと、有料のメールサポートもご利用いただけます。詳しくは 369Theme までお問い合わせください。"
+
+#: functions.php:242
+msgid "Request Customization"
+msgstr "カスタマイズを依頼する"
+
+#: functions.php:246
+msgid "Contact 369Theme"
+msgstr "369Theme に問い合わせる"
+
+#: patterns/profile.php:14
+msgid "Profile Card"
+msgstr "プロフィールカード"
+
 #~ msgid "Mobiki Theme Settings"
 #~ msgstr "Mobikiテーマ設定"
 

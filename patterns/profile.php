@@ -11,7 +11,7 @@
 ?>
 
 <!-- wp:group {"className":"side-profile","layout":{"type":"constrained"}} -->
-<div class="wp-block-group side-profile" aria-label="<?php esc_attr_e( 'Mobile Profile Card', 'mobiki' ); ?>">
+<div class="wp-block-group side-profile" aria-label="<?php esc_attr_e( 'Profile Card', 'mobiki' ); ?>">
 	<!-- wp:paragraph {"className":"profile-avatar"} -->
 	<p class="profile-avatar">👨‍💻</p>
 	<!-- /wp:paragraph -->

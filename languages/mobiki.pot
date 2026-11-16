@@ -1,335 +1,429 @@
-# Copyright (C) 2025 Miroku
+# Copyright (C) 2025 369work
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Mobiki 1.0.0\n"
+"Project-Id-Version: Mobiki 1.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mobiki\n"
-"POT-Creation-Date: 2025-11-01 00:00:00+00:00\n"
+"POT-Creation-Date: 2026-10-01 00:00:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: WordPress\n"
+"X-Generator: xgettext\n"
 
-#: functions.php:130
-msgid "Primary Menu"
-msgstr ""
-
-#: functions.php:131
-msgid "Mobile Menu"
-msgstr ""
-
-#: functions.php:132
-msgid "Footer Menu"
-msgstr ""
-
-#: functions.php:143
+#: functions.php:127
 msgid "Hero Section"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:131
 msgid "Sections"
 msgstr ""
 
-#: inc/admin-theme-settings.php:9
-#: inc/admin-theme-settings.php:63
-msgid "Mobiki Theme Settings"
+#: functions.php:168 functions.php:169 functions.php:206
+msgid "About Mobiki"
 msgstr ""
 
-#: inc/admin-theme-settings.php:10
-msgid "Mobiki Settings"
+#: functions.php:203
+msgid "(opens in a new tab)"
 msgstr ""
 
-#: inc/admin-theme-settings.php:53
-msgid "Settings saved."
+#: functions.php:207
+msgid "Mobiki is a mobile-first portfolio block theme for creators and personal blogs. You can edit the templates, patterns and styles from the Site Editor."
 msgstr ""
 
-#: inc/admin-theme-settings.php:64
-msgid "Configure the settings for the Mobiki theme."
+#: functions.php:210
+msgid "Get Started"
 msgstr ""
 
-#: inc/admin-theme-settings.php:65
-msgid "You will register the phone number, email address, and icon to be used in the theme profile."
+#: functions.php:211
+msgid "Open the Site Editor to change the front page, side menu, profile card and colors."
 msgstr ""
 
-#: inc/admin-theme-settings.php:70
-msgid "Phone Number"
+#: functions.php:214
+msgid "Open the Site Editor"
 msgstr ""
 
-#: inc/admin-theme-settings.php:76
-msgid "Contact Email"
+#: functions.php:220
+msgid "Review the Mobiki Theme"
 msgstr ""
 
-#: inc/admin-theme-settings.php:83
-msgid "Profile Description"
+#: functions.php:221
+msgid "Thank you for using the Mobiki theme! We would love to hear your feedback. Please take a moment to leave a review."
 msgstr ""
 
-#: inc/admin-theme-settings.php:89
-msgid "Enter a description for your profile."
+#: functions.php:224
+msgid "Leave a Review"
 msgstr ""
 
-#: inc/admin-theme-settings.php:94
-msgid "Profile Image"
+#: functions.php:231
+msgid "Theme Support"
 msgstr ""
 
-#: inc/admin-theme-settings.php:100
-msgid "Select Image"
+#: functions.php:232
+msgid "Free support for the Mobiki theme is provided on the WordPress.org support forum."
 msgstr ""
 
-#: inc/admin-theme-settings.php:101
-msgid "Remove Image"
+#: functions.php:235
+msgid "Support Forum"
 msgstr ""
 
-#: inc/admin-theme-settings.php:117
-msgid "Select Profile Image"
+#: functions.php:239
+msgid "Paid customization and paid email support are also available. For details, please contact 369Theme."
 msgstr ""
 
-#: inc/admin-theme-settings.php:118
-msgid "Use this image"
+#: functions.php:242
+msgid "Request Customization"
 msgstr ""
 
-#: inc/admin-theme-settings.php:141
-msgid "Save Settings"
+#: functions.php:246
+msgid "Contact 369Theme"
 msgstr ""
 
-#: patterns/404.php:16
+#: patterns/404.php:21
 msgid "ERROR 404"
 msgstr ""
 
-#: patterns/404.php:20
+#: patterns/404.php:27
 msgid "Page not found."
 msgstr ""
 
-#: patterns/404.php:24
+#: patterns/404.php:32
 msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
 msgstr ""
 
-#: patterns/404.php:36
+#: patterns/404.php:46
 msgid "Please use the links below to find the page you are looking for:"
 msgstr ""
 
-#: patterns/404.php:42
+#: patterns/404.php:53
 msgid "Back to Top"
 msgstr ""
 
-#: patterns/404.php:59
+#: patterns/404.php:70
 msgid "Recent Posts"
 msgstr ""
 
-#: patterns/about-section.php:16
+#: patterns/about-section.php:20
 msgid "ABOUT ME"
 msgstr ""
 
-#: patterns/about-section.php:20
+#: patterns/about-section.php:26
 msgid "About me"
 msgstr ""
 
-#: patterns/about-section.php:24
+#: patterns/about-section.php:31
 msgid "Through design, we create experiences that resonate with people's hearts."
 msgstr ""
 
-#: patterns/about-section.php:36
+#: patterns/about-section.php:46
 msgid "Hello. I am a web designer based in Tokyo."
 msgstr ""
 
-#: patterns/about-section.php:40
+#: patterns/about-section.php:51
 msgid "I prioritize user experience and strive for designs that balance beauty and functionality. With a mobile-first approach, I aim to deliver the best experience across all devices."
 msgstr ""
 
-#: patterns/about-section.php:44
+#: patterns/about-section.php:57
 msgid "Design is not just about aesthetics; it is about enriching people's lives."
 msgstr ""
 
-#: patterns/blog-section.php:14
+#: patterns/blog-archive.php:30 patterns/blog-section.php:20
+#: patterns/mobile-footer-nav.php:31 patterns/mobile-footer-nav.php:32
 msgid "BLOG"
 msgstr ""
 
-#: patterns/blog-section.php:18
+#: patterns/blog-archive.php:50 patterns/blog-section.php:26
 msgid "Blog"
 msgstr ""
 
-#: patterns/blog-section.php:22
+#: patterns/blog-archive.php:64 patterns/blog-section.php:31
 msgid "We share our thoughts and the latest information on design."
 msgstr ""
 
-#: patterns/breadcrumb.php:15
+#: patterns/blog-archive.php:94 patterns/search-results.php:38
+msgid "No posts found."
+msgstr ""
+
+#: patterns/blog-section.php:66
+msgid "View All Posts"
+msgstr ""
+
+#: patterns/breadcrumb.php:16
+msgid "Breadcrumb"
+msgstr ""
+
+#: patterns/breadcrumb.php:18
 msgid "Home"
 msgstr ""
 
-#: patterns/comments.php:16
+#: patterns/comments.php:20
 msgid "Comments"
 msgstr ""
 
-#: patterns/contact-section.php:19
+#: patterns/contact-section.php:22 patterns/mobile-footer-nav.php:27
+#: patterns/mobile-footer-nav.php:28
 msgid "CONTACT"
 msgstr ""
 
-#: patterns/contact-section.php:23
-msgid "CONTACT US"
+#: patterns/contact-section.php:28
+msgid "Contact US"
 msgstr ""
 
-#: patterns/contact-section.php:27
+#: patterns/contact-section.php:33
 msgid "Please feel free to contact us with any questions or inquiries regarding your project."
 msgstr ""
 
-#: patterns/contact-section.php:37
+#: patterns/contact-section.php:44
+msgid "Mail Icon"
+msgstr ""
+
+#: patterns/contact-section.php:45
 msgid "CONTACT US BY EMAIL"
 msgstr ""
 
-#: patterns/contact-section.php:41
+#: patterns/contact-section.php:53
+msgid "Phone Icon"
+msgstr ""
+
+#: patterns/contact-section.php:54
 msgid "CONTACT US BY PHONE"
 msgstr ""
 
-#: patterns/footer-content.php:17
+#: patterns/footer-content.php:16
+msgid "Open Post Menu"
+msgstr ""
+
+#: patterns/footer-content.php:18 patterns/footer-content.php:35
+msgid "Posts"
+msgstr ""
+
+#: patterns/footer-content.php:30
+msgid "Close Menu"
+msgstr ""
+
+#: patterns/footer-content.php:39
+msgid "All Posts"
+msgstr ""
+
+#: patterns/footer-content.php:48
+msgid "Search for:"
+msgstr ""
+
+#: patterns/footer-content.php:50
+msgid "Search posts..."
+msgstr ""
+
+#: patterns/footer-content.php:52
+msgid "Search for posts"
+msgstr ""
+
+#: patterns/footer-content.php:55
+msgid "Submit search"
+msgstr ""
+
+#: patterns/footer-content.php:57
+msgid "Search"
+msgstr ""
+
+#: patterns/footer-content.php:71
+msgid "Categories"
+msgstr ""
+
+#: patterns/footer-content.php:86
+msgid "Popular Tags"
+msgstr ""
+
+#: patterns/footer-content.php:104
 msgid " All Rights Reserved."
 msgstr ""
 
-#: patterns/hero-section.php:24
+#: patterns/hero-section.php:28
 msgid "Creative"
 msgstr ""
 
-#: patterns/hero-section.php:24
+#: patterns/hero-section.php:28
 msgid "Designer"
 msgstr ""
 
-#: patterns/hero-section.php:28
-msgid "With designs that resonate with the heart"
-msgstr ""
-
-#: patterns/hero-section.php:28
+#: patterns/hero-section.php:34
 msgid "Bring your vision to life."
 msgstr ""
 
+#: patterns/hero-section.php:34
+msgid "With designs that resonate with the heart"
+msgstr ""
+
 #: patterns/mobile-footer-nav.php:14
-#: patterns/mobile-footer-nav.php:15
+msgid "Mobile Footer Navigation"
+msgstr ""
+
+#: patterns/mobile-footer-nav.php:18 patterns/mobile-footer-nav.php:19
 msgid "ABOUT"
 msgstr ""
 
-#: patterns/mobile-footer-nav.php:18
-#: patterns/mobile-footer-nav.php:19
+#: patterns/mobile-footer-nav.php:22 patterns/mobile-footer-nav.php:23
 msgid "WORK"
 msgstr ""
 
-#: patterns/mobile-footer-nav.php:26
-#: patterns/mobile-footer-nav.php:27
-msgid "BLOG"
-msgstr ""
-
-#: patterns/mobile-footer-nav.php:30
-#: patterns/mobile-footer-nav.php:31
+#: patterns/mobile-footer-nav.php:35 patterns/mobile-footer-nav.php:36
+#: patterns/service-section.php:20
 msgid "SERVICE"
 msgstr ""
 
-#: patterns/mobile-profile.php:23
-msgid "Web Designer &amp; Developer"
+#: patterns/mobile-profile.php:14
+msgid "Mobile Profile Card"
 msgstr ""
 
-#: patterns/mobile-profile.php:24
-msgid "With creative design,"
+#: patterns/mobile-profile.php:21 patterns/profile.php:21
+msgid "Web Designer & Developer"
 msgstr ""
 
-#: patterns/mobile-profile.php:25
+#: patterns/mobile-profile.php:22 patterns/profile.php:22
+msgid "With creative design and development skills,"
+msgstr ""
+
+#: patterns/mobile-profile.php:23 patterns/profile.php:23
 msgid "I aim to provide the best user experience."
 msgstr ""
 
-#: patterns/mobile-profile.php:31
+#: patterns/mobile-profile.php:28 patterns/profile.php:28
 msgid "Available for work"
 msgstr ""
 
-#: patterns/profile.php:23
-msgid "Web Designer &amp; Developer"
+#: patterns/post-navigation.php:15
+msgid "Previous: "
 msgstr ""
 
-#: patterns/profile.php:24
-msgid "With creative design,"
+#: patterns/post-navigation.php:16
+msgid "Next: "
 msgstr ""
 
-#: patterns/profile.php:25
-msgid "I aim to provide the best user experience."
+#: patterns/profile.php:14
+msgid "Profile Card"
 msgstr ""
 
-#: patterns/profile.php:31
-msgid "Available for work"
+#: patterns/scroll.php:14
+msgid "Scroll to top"
 msgstr ""
 
-#: patterns/service-section.php:15
-msgid "SERVICE"
+#: patterns/scroll.php:15
+msgid "Up arrow"
 msgstr ""
 
-#: patterns/service-section.php:19
+#: patterns/service-section.php:26
 msgid "Services provided"
 msgstr ""
 
-#: patterns/service-section.php:23
+#: patterns/service-section.php:31
 msgid "Services offered: We provide optimal solutions tailored to our customers' needs."
 msgstr ""
 
-#: patterns/service-section.php:33
+#: patterns/service-section.php:43
+msgid "Web Design Icon"
+msgstr ""
+
+#: patterns/service-section.php:47
 msgid "WEB Design"
 msgstr ""
 
-#: patterns/service-section.php:34
+#: patterns/service-section.php:52
 msgid "We design beautiful and functional websites that prioritize the user experience."
 msgstr ""
 
-#: patterns/service-section.php:38
+#: patterns/service-section.php:61
+msgid "UI/UX Icon"
+msgstr ""
+
+#: patterns/service-section.php:65
 msgid "UI/UX Design"
 msgstr ""
 
-#: patterns/service-section.php:39
+#: patterns/service-section.php:70
 msgid "We provide interface design that balances usability and aesthetics."
 msgstr ""
 
-#: patterns/service-section.php:43
+#: patterns/service-section.php:79
+msgid "Branding Icon"
+msgstr ""
+
+#: patterns/service-section.php:83
 msgid "Branding"
 msgstr ""
 
-#: patterns/service-section.php:44
+#: patterns/service-section.php:88
 msgid "We support branding that maximizes the value of companies and services."
 msgstr ""
 
-#: patterns/service-section.php:48
+#: patterns/service-section.php:98
+msgid "Front-end Development Icon"
+msgstr ""
+
+#: patterns/service-section.php:102
 msgid "Front-end Development"
 msgstr ""
 
-#: patterns/service-section.php:49
+#: patterns/service-section.php:107
 msgid "We provide high-quality front-end development using modern technologies."
 msgstr ""
 
-#: patterns/work-section.php:15
+#: patterns/side-menu.php:14
+msgid "main navigation"
+msgstr ""
+
+#: patterns/side-menu.php:24
+msgid "SNS Link"
+msgstr ""
+
+#: patterns/side-menu.php:27 patterns/side-menu.php:28
+msgid "Twitter"
+msgstr ""
+
+#: patterns/side-menu.php:33 patterns/side-menu.php:35
+msgid "Instagram"
+msgstr ""
+
+#: patterns/side-menu.php:39 patterns/side-menu.php:41
+msgid "GitHub"
+msgstr ""
+
+#: patterns/side-menu.php:46 patterns/side-menu.php:48
+msgid "LinkedIn"
+msgstr ""
+
+#: patterns/work-section.php:21
 msgid "WORKS"
 msgstr ""
 
-#: patterns/work-section.php:19
+#: patterns/work-section.php:27
 msgid "Project History"
 msgstr ""
 
-#: patterns/work-section.php:23
+#: patterns/work-section.php:32
 msgid "A showcase of some of the projects we have worked on."
 msgstr ""
 
-#: patterns/work-section.php:38
+#: patterns/work-section.php:48
 msgid "Branding site production"
 msgstr ""
 
-#: patterns/work-section.php:42
+#: patterns/work-section.php:52
 msgid "We created a website to establish the brand identity of a startup company. With a modern design and intuitive UI, we maximized the appeal of the brand."
 msgstr ""
 
-#: patterns/work-section.php:57
+#: patterns/work-section.php:67
 msgid "Mobile App UI Design"
 msgstr ""
 
-#: patterns/work-section.php:61
+#: patterns/work-section.php:72
 msgid "We were responsible for the UI/UX design of an e-commerce application. Focusing on usability, we designed a seamless flow to purchase."
 msgstr ""
 
-#: patterns/work-section.php:76
+#: patterns/work-section.php:88
 msgid "Portfolio Site"
 msgstr ""
 
-#: patterns/work-section.php:79
+#: patterns/work-section.php:92
 msgid "We designed a portfolio site for creators. The structure focuses on visuals to maximize the appeal of the works."
 msgstr ""

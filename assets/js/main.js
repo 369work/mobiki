@@ -461,6 +461,30 @@
         }
     };
 
+    // Place the desktop side menu and profile card just below the site header.
+    // The header height depends on the site title, tagline and logo, so it is measured
+    // instead of guessed. main.css keeps a fixed value as the fallback when this does not run.
+    const initSidePosition = () => {
+        try {
+            const header = document.querySelector('.site-header');
+            if (!header) return;
+
+            const gap = 64;
+            const update = () => {
+                // Position in the document, so it does not change while scrolling.
+                // It includes the admin bar, because WordPress pushes the page down for it.
+                const bottom = header.getBoundingClientRect().bottom + window.scrollY;
+                document.body.style.setProperty('--mobiki-side-top', `${Math.round(bottom + gap)}px`);
+            };
+
+            update();
+            window.addEventListener('load', update);
+            window.addEventListener('resize', debounce(update, 150));
+        } catch (error) {
+            logError(error, 'initSidePosition');
+        }
+    };
+
     // メイン初期化関数
     const init = () => {
         try {
@@ -470,6 +494,7 @@
             initFormHandling();
             initLazyLoading();
             initFooterNavigation(); // フッターナビゲーションを初期化
+            initSidePosition();
 
             // 初期化完了をログ出力
             if (console && console.log) {

@@ -6,7 +6,7 @@
             "palette": [
                 {
                     "slug": "primary",
-                    "color": "#5D7B89",
+                    "color": "#587581",
                     "name": "Primary"
                 },
                 {
@@ -56,7 +56,7 @@
                 },
                 {
                     "slug": "text-light",
-                    "color": "#95A5A6",
+                    "color": "#667475",
                     "name": "Text Light"
                 },
                 {
@@ -73,6 +73,21 @@
                     "slug": "border-light",
                     "color": "#E8EBE8",
                     "name": "Border Light"
+                },
+                {
+                    "slug": "button-bg",
+                    "color": "#587581",
+                    "name": "Button Background"
+                },
+                {
+                    "slug": "button-bg-hover",
+                    "color": "#4A6270",
+                    "name": "Button Background Hover"
+                },
+                {
+                    "slug": "button-text",
+                    "color": "#ffffff",
+                    "name": "Button Text"
                 },
                 {
                     "slug": "white",

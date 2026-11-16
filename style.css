@@ -1,16 +1,17 @@
 /*
 Theme Name: Mobiki
-Author: Miroku
+Theme URI: https://369theme.com/themes/mobiki
+Author: miroku
 Author URI: https://profiles.wordpress.org/369work/
 Description: A mobile-first portfolio theme with a Scandinavian design. It features beautiful animations and an accessible design.
-Version: 1.7
+Version: 1.9
 Requires at least: 6.6
 Tested up to: 7.1
-Requires PHP: 8.1
+Requires PHP: 7.4
 License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: mobiki
-Tags: blog, portfolio, one-column, custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready
+Tags: blog, portfolio, one-column, three-columns, left-sidebar, right-sidebar, block-patterns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, post-formats, sticky-post, style-variations, threaded-comments, translation-ready, wide-blocks
 */
 
 /*** CSS Reset ***/

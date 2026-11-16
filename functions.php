@@ -157,3 +157,97 @@ function mobiki_theme_excerpt_more( $more ) {
 	return '...';
 }
 add_filter( 'excerpt_more', 'mobiki_theme_excerpt_more' );
+
+/**
+ * Add the About Mobiki page under Appearance.
+ *
+ * @since 1.9
+ */
+function mobiki_add_about_page() {
+	add_theme_page(
+		__( 'About Mobiki', 'mobiki' ),
+		__( 'About Mobiki', 'mobiki' ),
+		'edit_theme_options',
+		'mobiki-about',
+		'mobiki_render_about_page'
+	);
+}
+add_action( 'admin_menu', 'mobiki_add_about_page' );
+
+/**
+ * Load the About Mobiki page styles on that page only.
+ *
+ * @since 1.9
+ *
+ * @param string $hook_suffix The current admin page.
+ */
+function mobiki_enqueue_about_page_styles( $hook_suffix ) {
+	if ( 'appearance_page_mobiki-about' !== $hook_suffix ) {
+		return;
+	}
+
+	wp_enqueue_style( 'mobiki-admin', get_template_directory_uri() . '/assets/css/admin.css', array(), MOBIKI_THEME_VERSION );
+}
+add_action( 'admin_enqueue_scripts', 'mobiki_enqueue_about_page_styles' );
+
+/**
+ * Render the About Mobiki page.
+ *
+ * @since 1.9
+ */
+function mobiki_render_about_page() {
+	if ( ! current_user_can( 'edit_theme_options' ) ) {
+		return;
+	}
+
+	$new_tab = '<span class="screen-reader-text">' . esc_html__( '(opens in a new tab)', 'mobiki' ) . '</span>';
+	?>
+	<div class="wrap mobiki-about">
+		<h1><?php esc_html_e( 'About Mobiki', 'mobiki' ); ?></h1>
+		<p class="mobiki-about__lead"><?php esc_html_e( 'Mobiki is a mobile-first portfolio block theme for creators and personal blogs. You can edit the templates, patterns and styles from the Site Editor.', 'mobiki' ); ?></p>
+
+		<div class="card">
+			<h2 class="title"><?php esc_html_e( 'Get Started', 'mobiki' ); ?></h2>
+			<p><?php esc_html_e( 'Open the Site Editor to change the front page, side menu, profile card and colors.', 'mobiki' ); ?></p>
+			<p>
+				<a class="button button-primary" href="<?php echo esc_url( admin_url( 'site-editor.php' ) ); ?>">
+					<?php esc_html_e( 'Open the Site Editor', 'mobiki' ); ?>
+				</a>
+			</p>
+		</div>
+
+		<div class="card">
+			<h2 class="title"><?php esc_html_e( 'Review the Mobiki Theme', 'mobiki' ); ?></h2>
+			<p><?php esc_html_e( 'Thank you for using the Mobiki theme! We would love to hear your feedback. Please take a moment to leave a review.', 'mobiki' ); ?></p>
+			<p>
+				<a class="button" href="https://wordpress.org/support/theme/mobiki/reviews/" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Leave a Review', 'mobiki' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+			</p>
+		</div>
+
+		<div class="card">
+			<h2 class="title"><?php esc_html_e( 'Theme Support', 'mobiki' ); ?></h2>
+			<p><?php esc_html_e( 'Free support for the Mobiki theme is provided on the WordPress.org support forum.', 'mobiki' ); ?></p>
+			<p>
+				<a class="button" href="https://wordpress.org/support/theme/mobiki/" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Support Forum', 'mobiki' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+			</p>
+			<p><?php esc_html_e( 'Paid customization and paid email support are also available. For details, please contact 369Theme.', 'mobiki' ); ?></p>
+			<p class="mobiki-about__links">
+				<a class="button" href="https://369theme.com/order" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Request Customization', 'mobiki' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+				<a class="button" href="https://369theme.com/contact?product=mobiki" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Contact 369Theme', 'mobiki' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+			</p>
+		</div>
+	</div>
+	<?php
+}

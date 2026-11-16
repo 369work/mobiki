@@ -1,0 +1,101 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "title": "Monochrome",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#2B2B2B",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "primary-dark",
+                    "color": "#000000",
+                    "name": "Primary Dark"
+                },
+                {
+                    "slug": "primary-light",
+                    "color": "#595959",
+                    "name": "Primary Light"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#767676",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "accent-mint",
+                    "color": "#8C8C8C",
+                    "name": "Accent Mint"
+                },
+                {
+                    "slug": "accent-coral",
+                    "color": "#404040",
+                    "name": "Accent Coral"
+                },
+                {
+                    "slug": "accent-mustard",
+                    "color": "#A6A6A6",
+                    "name": "Accent Mustard"
+                },
+                {
+                    "slug": "accent-sage",
+                    "color": "#BFBFBF",
+                    "name": "Accent Sage"
+                },
+                {
+                    "slug": "text-dark",
+                    "color": "#111111",
+                    "name": "Text Dark"
+                },
+                {
+                    "slug": "text-medium",
+                    "color": "#4A4A4A",
+                    "name": "Text Medium"
+                },
+                {
+                    "slug": "text-light",
+                    "color": "#6B6B6B",
+                    "name": "Text Light"
+                },
+                {
+                    "slug": "bg-light",
+                    "color": "#FFFFFF",
+                    "name": "Background Light"
+                },
+                {
+                    "slug": "bg-warm",
+                    "color": "#F4F4F4",
+                    "name": "Background Warm"
+                },
+                {
+                    "slug": "border-light",
+                    "color": "#DCDCDC",
+                    "name": "Border Light"
+                },
+                {
+                    "slug": "button-bg",
+                    "color": "#2B2B2B",
+                    "name": "Button Background"
+                },
+                {
+                    "slug": "button-bg-hover",
+                    "color": "#000000",
+                    "name": "Button Background Hover"
+                },
+                {
+                    "slug": "button-text",
+                    "color": "#ffffff",
+                    "name": "Button Text"
+                },
+                {
+                    "slug": "white",
+                    "color": "#ffffff",
+                    "name": "White"
+                }
+            ]
+        }
+    }
+}
